@@ -1,206 +1,206 @@
 restaurant_id,nombre,ciudad,vertical,rating_actual,rating_prom_30d,delta_rating,tasa_cancelacion_pct,tiempo_entrega_avg_min,ordenes_7d,ordenes_7d_anterior,var_ordenes_pct,quejas_7d,nps_score,valor_ticket_prom_mxn,kam_asignado,activo_desde,semaforo_riesgo
-R0005,El Asadero El Portal,Bogotá,Mercado,3.3,3.6,-0.31,15.5,43,111,123,-9.7,8,51,171.89,Ana Torres,2025-06-13,🟡 EN RIESGO
-R0054,Burritos Gourmet,Barranquilla,Farmacia,4.1,4.1,-0.04,4.7,33,227,203,11.6,3,91,438.57,Ana Torres,2026-09-18,🟢 ESTABLE
-R0059,Café Del Norte,Barranquilla,Farmacia,3.4,3.5,-0.07,20.4,57,60,68,-11.4,8,57,244.09,Ana Torres,2025-12-12,🟡 EN RIESGO
-R0062,Tortas La Abuela,CDMX,Comida,2.5,3.1,-0.64,22.2,95,50,64,-21.4,29,5,149.4,Ana Torres,2024-06-03,🔴 CRÍTICO
-R0074,Tortas Gourmet,Querétaro,Comida,3.6,3.8,-0.19,13.3,39,46,52,-11.9,17,35,137.59,Ana Torres,2024-11-25,🟡 EN RIESGO
-R0090,Café Artesanal,Córdoba,Farmacia,4.6,4.4,0.15,8.2,36,108,104,3.8,0,74,336.99,Ana Torres,2024-06-25,🟢 ESTABLE
-R0103,La Cocina de El Rey 7,Puebla,Comida,4.2,4.0,0.22,4.1,38,133,116,14.3,5,89,293.06,Ana Torres,2026-02-20,🟢 ESTABLE
-R0104,Burger Clásico,Tijuana,Farmacia,1.9,2.7,-0.79,23.0,84,7,11,-37.1,16,25,99.95,Ana Torres,2025-12-07,🔴 CRÍTICO
-R0115,El Fogón Premium,Tijuana,Comida,3.4,3.7,-0.34,17.5,54,73,79,-7.4,14,31,252.04,Ana Torres,2024-08-14,🟡 EN RIESGO
-R0119,Mariscos La Esquina,Bogotá,Comida,4.9,4.8,0.1,1.8,30,338,318,6.4,1,71,378.34,Ana Torres,2024-06-12,🟢 ESTABLE
-R0123,Burger El Rey,Córdoba,Farmacia,2.4,3.1,-0.72,27.4,87,39,57,-31.8,33,9,127.49,Ana Torres,2026-03-25,🔴 CRÍTICO
-R0134,Pizzería Premium 4,Puebla,Farmacia,4.7,4.8,-0.1,4.5,32,216,182,18.9,2,83,425.78,Ana Torres,2025-08-18,🟢 ESTABLE
-R0141,Burritos Del Norte 8,CDMX,Mercado,3.1,3.4,-0.28,13.3,58,44,55,-19.5,15,43,218.39,Ana Torres,2025-07-06,🟡 EN RIESGO
-R0142,Pizzería El Portal,Bogotá,Comida,4.7,4.5,0.18,1.4,19,285,269,6.0,4,71,436.49,Ana Torres,2024-12-12,🟢 ESTABLE
-R0153,El Asadero 100% Natural,Medellín,Bebidas,2.0,2.7,-0.75,35.3,74,48,62,-22.6,17,20,179.17,Ana Torres,2024-09-08,🔴 CRÍTICO
-R0186,El Mercado de La Abuela,Puebla,Comida,3.7,3.8,-0.12,12.9,47,44,53,-16.4,15,49,131.36,Ana Torres,2026-03-10,🟡 EN RIESGO
-R0187,El Mercado de La Plaza,Lima,Comida,4.5,4.5,-0.03,5.2,20,88,80,9.7,0,73,253.35,Ana Torres,2026-05-25,🟢 ESTABLE
-R0189,Burritos Casero 2,Lima,Bebidas,4.8,4.8,-0.05,6.5,19,238,213,11.7,5,88,239.72,Ana Torres,2024-12-07,🟢 ESTABLE
-R0030,Los Tacos de La Esquina 7,Bogotá,Comida,4.9,4.9,-0.01,3.8,24,155,162,-4.4,1,80,387.83,Carlos Mendoza,2026-09-19,🟢 ESTABLE
-R0036,Café El Rey,CDMX,Bebidas,3.8,3.9,-0.08,21.8,52,33,35,-6.4,14,48,226.08,Carlos Mendoza,2027-10-08,🟡 EN RIESGO
-R0056,Los Tacos de Clásico,Tijuana,Comida,1.8,2.7,-0.88,33.9,70,50,84,-40.7,32,0,135.23,Carlos Mendoza,2025-06-04,🔴 CRÍTICO
-R0070,Tortas La Familia,CDMX,Farmacia,3.5,3.6,-0.15,17.8,38,47,58,-19.3,5,39,279.35,Carlos Mendoza,2024-09-16,🟡 EN RIESGO
-R0080,Parrilla Del Norte,Tijuana,Comida,4.1,4.1,0.04,7.0,31,449,466,-3.7,2,84,286.23,Carlos Mendoza,2027-05-28,🟢 ESTABLE
-R0098,Burger Del Barrio,Puebla,Bebidas,3.0,3.3,-0.31,17.7,46,100,106,-6.0,16,57,202.55,Carlos Mendoza,2025-10-05,🟡 EN RIESGO
-R0099,El Fogón Artesanal 8,CDMX,Comida,5.0,4.8,0.23,9.0,18,292,303,-3.7,4,76,260.16,Carlos Mendoza,2026-04-07,🟢 ESTABLE
-R0145,La Cocina de Del Norte 8,Bogotá,Mercado,2.0,2.8,-0.82,25.3,68,26,36,-27.5,44,14,164.71,Carlos Mendoza,2027-03-02,🔴 CRÍTICO
-R0157,Café Don Chuy,Lima,Bebidas,3.6,3.8,-0.24,12.7,52,78,90,-13.5,15,48,225.71,Carlos Mendoza,2027-08-19,🟡 EN RIESGO
-R0165,Tortas 100% Natural,CDMX,Comida,4.7,4.6,0.13,6.8,38,284,238,19.2,2,95,450.72,Carlos Mendoza,2024-03-22,🟢 ESTABLE
-R0169,Burritos El Rey,Monterrey,Comida,4.6,4.6,-0.02,6.3,30,82,73,12.6,1,73,435.79,Carlos Mendoza,2027-05-27,🟢 ESTABLE
-R0175,La Fonda de Fusión 3,Tijuana,Comida,3.4,3.7,-0.31,20.5,36,87,104,-16.1,18,56,133.92,Carlos Mendoza,2025-06-29,🔴 CRÍTICO
-R0181,El Rincón La Familia,CDMX,Farmacia,4.8,4.8,-0.03,4.6,27,438,385,13.9,3,85,211.01,Carlos Mendoza,2024-03-03,🟢 ESTABLE
-R0182,Tortas La Esquina 9,Bogotá,Comida,4.8,4.6,0.23,9.9,31,435,443,-1.7,0,72,310.24,Carlos Mendoza,2024-09-28,🟢 ESTABLE
-R0193,Café El Torito,Bogotá,Bebidas,3.3,3.7,-0.36,18.1,36,52,62,-16.7,13,31,272.65,Carlos Mendoza,2026-10-09,🔴 CRÍTICO
-R0002,Parrilla Fusión,CDMX,Comida,4.7,4.5,0.22,1.1,23,437,414,5.6,2,69,253.21,Diego Vargas,2024-09-26,🟢 ESTABLE
-R0004,El Asadero El Centro,Querétaro,Comida,3.7,3.8,-0.06,20.3,38,78,93,-15.8,15,56,178.37,Diego Vargas,2026-02-26,🟡 EN RIESGO
-R0014,La Fonda de Express,Barranquilla,Bebidas,4.5,4.4,0.07,5.2,19,424,381,11.3,5,68,200.61,Diego Vargas,2024-10-10,🟢 ESTABLE
-R0021,Parrilla La Abuela,Puebla,Comida,1.8,2.2,-0.37,25.8,61,40,68,-40.8,24,19,101.06,Diego Vargas,2025-04-21,🔴 CRÍTICO
-R0040,Pizzería La Abuela,Querétaro,Comida,2.1,2.9,-0.83,41.6,57,27,39,-30.6,36,11,86.9,Diego Vargas,2024-03-26,🔴 CRÍTICO
-R0044,Mariscos El Rápido,Tijuana,Comida,4.0,4.0,0.02,4.6,25,236,211,11.6,2,80,368.18,Diego Vargas,2026-07-20,🟢 ESTABLE
-R0064,Tortas Clásico,Querétaro,Comida,3.4,3.6,-0.17,20.8,49,66,73,-9.8,7,32,190.68,Diego Vargas,2027-06-17,🟡 EN RIESGO
-R0079,Café Fusión 7,Cali,Bebidas,3.1,3.5,-0.35,21.1,37,41,44,-7.5,6,43,135.45,Diego Vargas,2024-11-22,🔴 CRÍTICO
-R0088,El Fogón La Familia,Querétaro,Bebidas,4.3,4.3,0.04,4.0,23,119,110,7.8,0,81,353.38,Diego Vargas,2026-02-18,🟢 ESTABLE
-R0093,La Cocina de Gourmet,São Paulo,Farmacia,4.3,4.1,0.17,3.6,37,156,151,3.3,4,86,228.09,Diego Vargas,2025-11-26,🟢 ESTABLE
-R0102,El Fogón La Plaza,Tijuana,Comida,4.2,4.1,0.07,6.5,25,372,353,5.4,5,86,209.11,Diego Vargas,2024-07-17,🟢 ESTABLE
-R0108,El Mercado de 100% Natural,CDMX,Comida,4.7,4.7,-0.04,1.3,37,427,373,14.5,0,69,202.86,Diego Vargas,2026-03-12,🟢 ESTABLE
-R0117,La Cocina de Premium,Cali,Comida,4.4,4.4,-0.02,6.5,28,447,434,3.0,2,77,224.46,Diego Vargas,2027-01-19,🟢 ESTABLE
-R0121,El Asadero El Rey,Tijuana,Mercado,4.7,4.7,0.01,9.9,37,140,143,-1.8,0,77,306.89,Diego Vargas,2027-04-17,🟢 ESTABLE
-R0127,Tortas El Torito,Barranquilla,Comida,3.3,3.4,-0.06,13.6,44,120,144,-16.9,16,45,170.73,Diego Vargas,2027-04-22,🟡 EN RIESGO
-R0128,Pizzería La Plaza,Medellín,Mercado,3.4,3.5,-0.06,19.8,59,48,57,-15.6,9,60,234.26,Diego Vargas,2026-08-23,🟡 EN RIESGO
-R0146,El Rincón El Rey,Bogotá,Comida,3.6,3.7,-0.09,12.3,59,105,116,-9.1,13,36,196.7,Diego Vargas,2025-11-11,🟢 ESTABLE
-R0170,Carnitas Gourmet,Guadalajara,Comida,4.3,4.1,0.17,5.4,38,240,218,9.9,4,77,379.58,Diego Vargas,2026-02-19,🟢 ESTABLE
-R0179,Parrilla El Rey,Santiago,Comida,4.4,4.4,-0.02,3.4,27,252,232,8.7,1,83,469.82,Diego Vargas,2024-06-08,🟢 ESTABLE
-R0184,Burritos El Portal,Bogotá,Comida,3.5,3.9,-0.37,11.2,59,45,51,-11.2,11,41,274.12,Diego Vargas,2024-12-12,🟡 EN RIESGO
-R0190,Mariscos 100% Natural,CDMX,Comida,4.9,4.7,0.19,2.5,22,217,192,13.3,0,89,485.97,Diego Vargas,2026-07-28,🟢 ESTABLE
-R0196,Burritos El Rápido,Bogotá,Comida,2.7,3.5,-0.81,26.2,57,19,24,-20.8,31,13,150.08,Diego Vargas,2026-09-25,🔴 CRÍTICO
-R0003,Pizzería 100% Natural,CDMX,Bebidas,3.6,3.7,-0.12,18.8,52,45,48,-5.4,11,32,208.33,Fernando Castro,2026-03-11,🟡 EN RIESGO
-R0011,El Asadero La Familia,CDMX,Comida,3.8,3.9,-0.06,16.4,39,46,51,-10.1,13,35,162.41,Fernando Castro,2026-07-15,🟡 EN RIESGO
-R0018,Burger La Familia,CDMX,Comida,3.4,3.7,-0.32,11.4,53,61,69,-11.3,5,49,133.12,Fernando Castro,2027-05-02,🟡 EN RIESGO
-R0047,Taquería La Plaza,Barranquilla,Comida,4.4,4.4,0.04,9.7,26,324,331,-2.1,0,77,347.19,Fernando Castro,2027-09-11,🟢 ESTABLE
-R0051,Burritos Express,Querétaro,Comida,4.9,4.6,0.26,8.4,20,110,111,-0.9,2,84,434.65,Fernando Castro,2025-10-13,🟢 ESTABLE
-R0057,Pizzería Artesanal,Guadalajara,Comida,4.7,4.6,0.1,3.5,33,321,318,1.1,4,69,310.42,Fernando Castro,2027-01-05,🟢 ESTABLE
-R0071,El Mercado de Clásico,Bogotá,Comida,5.0,4.9,0.18,5.9,36,159,136,17.1,5,68,463.46,Fernando Castro,2026-06-14,🟢 ESTABLE
-R0077,Mariscos Clásico,São Paulo,Comida,4.2,4.1,0.14,1.6,26,399,360,10.8,4,87,290.56,Fernando Castro,2027-02-20,🟢 ESTABLE
-R0081,Sushi El Rápido,Puebla,Comida,4.3,4.1,0.24,4.3,26,373,370,0.7,3,92,370.73,Fernando Castro,2027-08-09,🟢 ESTABLE
-R0083,El Fogón Del Barrio,CDMX,Comida,4.4,4.4,-0.04,3.8,28,370,337,9.9,0,69,233.52,Fernando Castro,2024-06-10,🟢 ESTABLE
-R0118,Cevichería Express 6,Tijuana,Comida,4.0,4.1,-0.08,9.5,37,294,291,1.2,1,91,291.33,Fernando Castro,2025-12-01,🟢 ESTABLE
-R0124,Los Tacos de Don Chuy 9,Lima,Comida,4.9,4.6,0.29,6.2,25,449,466,-3.7,3,70,358.24,Fernando Castro,2026-04-18,🟢 ESTABLE
-R0161,Cevichería Express,Barranquilla,Comida,4.1,4.0,0.06,8.6,30,248,234,6.0,3,91,460.0,Fernando Castro,2024-12-04,🟢 ESTABLE
-R0171,Los Tacos de El Portal,Cali,Comida,3.4,3.7,-0.29,12.9,38,53,62,-14.4,7,46,182.15,Fernando Castro,2024-12-08,🟡 EN RIESGO
-R0177,La Cocina de El Torito,Guadalajara,Bebidas,1.8,2.2,-0.38,25.5,75,20,26,-24.4,36,12,128.95,Fernando Castro,2027-09-17,🔴 CRÍTICO
-R0191,El Rincón La Plaza,Medellín,Comida,3.4,3.6,-0.22,10.7,53,51,60,-14.5,9,54,136.46,Fernando Castro,2024-10-23,🟡 EN RIESGO
-R0001,El Rincón Casero,Guadalajara,Comida,4.9,4.7,0.17,9.0,20,382,362,5.5,0,67,254.34,Isabella Moreno,2027-07-16,🟢 ESTABLE
-R0009,Los Tacos de Fusión,Lima,Comida,4.2,4.0,0.19,7.5,34,171,159,7.7,0,92,392.6,Isabella Moreno,2027-07-31,🟢 ESTABLE
-R0015,La Fonda de Del Norte,Bogotá,Comida,4.4,4.4,0.01,3.2,20,306,266,15.2,4,68,197.2,Isabella Moreno,2024-03-31,🟢 ESTABLE
-R0017,Sushi Del Barrio,São Paulo,Comida,5.0,4.9,0.13,5.9,28,109,113,-3.7,3,81,492.59,Isabella Moreno,2025-01-17,🟢 ESTABLE
-R0031,El Mercado de El Rápido,São Paulo,Comida,4.3,4.1,0.18,9.0,21,297,296,0.5,5,81,337.95,Isabella Moreno,2025-07-24,🟢 ESTABLE
-R0032,Sushi Clásico,Guadalajara,Comida,3.8,4.0,-0.19,21.4,49,108,117,-7.8,13,43,252.89,Isabella Moreno,2026-08-31,🟡 EN RIESGO
-R0041,Pizzería Fusión,São Paulo,Comida,2.6,3.0,-0.4,35.6,82,16,21,-25.2,45,20,107.01,Isabella Moreno,2026-11-16,🔴 CRÍTICO
-R0067,La Cocina de La Plaza 7,Guadalajara,Comida,3.0,3.3,-0.3,19.0,40,55,67,-18.0,13,58,275.44,Isabella Moreno,2026-12-23,🟡 EN RIESGO
-R0073,El Asadero Del Barrio,Guadalajara,Comida,3.3,3.7,-0.39,19.4,42,46,50,-8.2,8,32,252.77,Isabella Moreno,2025-04-29,🟡 EN RIESGO
-R0075,Tortas La Plaza,CDMX,Farmacia,4.1,4.2,-0.08,7.7,34,138,121,13.6,3,79,444.53,Isabella Moreno,2027-06-29,🟢 ESTABLE
-R0094,El Asadero La Abuela,Buenos Aires,Comida,3.4,3.7,-0.29,11.5,57,117,125,-6.3,6,50,227.27,Isabella Moreno,2026-03-12,🟢 ESTABLE
-R0095,Los Tacos de Premium,CDMX,Farmacia,2.1,2.5,-0.44,24.2,63,14,25,-42.9,42,25,90.11,Isabella Moreno,2027-02-12,🔴 CRÍTICO
-R0129,La Fonda de Del Barrio,Medellín,Comida,3.2,3.4,-0.2,13.3,38,108,119,-8.9,8,37,128.12,Isabella Moreno,2025-06-06,🟡 EN RIESGO
-R0132,La Cocina de Don Chuy,Monterrey,Mercado,4.8,4.5,0.27,4.0,32,408,376,8.6,3,93,499.11,Isabella Moreno,2026-10-15,🟢 ESTABLE
-R0136,Cevichería El Portal,Barranquilla,Comida,4.9,4.6,0.27,7.8,24,206,184,12.0,4,92,447.71,Isabella Moreno,2026-09-01,🟢 ESTABLE
-R0137,Pizzería El Centro 5,Puebla,Farmacia,3.0,3.3,-0.29,16.2,38,117,141,-16.9,14,45,134.55,Isabella Moreno,2026-08-30,🟡 EN RIESGO
-R0149,Tortas El Rápido 7,Bogotá,Farmacia,5.0,4.7,0.29,6.8,33,315,318,-0.8,2,70,227.59,Isabella Moreno,2026-11-26,🟢 ESTABLE
-R0151,Carnitas El Centro,Bogotá,Comida,3.5,3.7,-0.18,15.8,50,32,40,-19.9,13,43,121.9,Isabella Moreno,2025-09-14,🟡 EN RIESGO
-R0154,El Mercado de Del Norte,Buenos Aires,Bebidas,4.8,4.6,0.18,1.7,31,410,358,14.6,4,92,511.11,Isabella Moreno,2024-05-27,🟢 ESTABLE
-R0159,Cevichería Del Norte 8,Guadalajara,Comida,4.2,4.1,0.12,6.4,28,277,291,-4.7,3,77,444.92,Isabella Moreno,2025-07-11,🟢 ESTABLE
-R0164,Sushi Fusión 8,Guadalajara,Mercado,5.0,4.9,0.09,4.6,34,434,411,5.5,0,90,509.27,Isabella Moreno,2027-06-30,🟢 ESTABLE
-R0174,La Cocina de El Torito 5,CDMX,Comida,4.3,4.2,0.08,7.7,33,361,335,7.8,4,68,271.08,Isabella Moreno,2026-03-22,🟢 ESTABLE
-R0176,Sushi Del Barrio 5,Bogotá,Farmacia,3.5,3.7,-0.21,17.2,40,71,75,-5.3,9,39,211.64,Isabella Moreno,2024-09-12,🟡 EN RIESGO
-R0185,El Asadero Casero,Bogotá,Mercado,3.5,3.7,-0.19,19.3,57,33,36,-7.3,15,58,168.26,Isabella Moreno,2027-07-26,🟡 EN RIESGO
-R0194,Parrilla Clásico 2,Lima,Mercado,4.5,4.3,0.21,7.7,25,317,304,4.2,3,89,443.8,Isabella Moreno,2025-07-16,🟢 ESTABLE
-R0012,Los Tacos de El Rey,Bogotá,Comida,2.4,3.0,-0.64,31.4,62,20,33,-38.9,25,0,138.83,Juan Pérez,2027-06-19,🔴 CRÍTICO
-R0023,El Asadero Artesanal,CDMX,Comida,4.9,4.8,0.13,2.3,22,101,98,2.7,0,93,301.66,Juan Pérez,2024-09-27,🟢 ESTABLE
-R0024,Sushi Casero,Santiago,Bebidas,3.1,3.5,-0.41,39.4,56,16,21,-25.1,25,25,173.08,Juan Pérez,2025-08-29,🔴 CRÍTICO
-R0027,El Fogón Express,Lima,Bebidas,4.5,4.5,0.0,7.4,18,346,293,18.1,4,86,424.61,Juan Pérez,2026-03-16,🟢 ESTABLE
-R0033,Cevichería El Torito,Monterrey,Comida,3.6,3.9,-0.3,19.3,50,110,132,-16.4,12,32,234.17,Juan Pérez,2025-09-08,🟡 EN RIESGO
-R0034,Parrilla La Familia,Lima,Farmacia,4.4,4.2,0.18,7.4,20,292,278,5.2,4,79,321.36,Juan Pérez,2026-07-09,🟢 ESTABLE
-R0039,Carnitas Premium 3,Querétaro,Comida,3.0,3.3,-0.29,16.9,44,103,114,-9.8,11,42,270.64,Juan Pérez,2024-08-03,🟡 EN RIESGO
-R0049,Burritos La Abuela,Cali,Mercado,3.1,3.2,-0.06,11.2,59,56,63,-10.6,9,51,132.99,Juan Pérez,2025-02-19,🟢 ESTABLE
-R0055,Pizzería El Rey 2,CDMX,Farmacia,3.3,3.6,-0.26,12.3,46,109,119,-8.7,15,44,241.6,Juan Pérez,2025-08-29,🟡 EN RIESGO
-R0063,Los Tacos de 100% Natural,Lima,Comida,4.2,4.1,0.11,6.1,23,167,168,-0.6,4,92,310.07,Juan Pérez,2026-12-15,🟢 ESTABLE
-R0069,El Mercado de Don Chuy,Santiago,Comida,4.1,4.1,0.05,7.7,26,379,363,4.5,5,95,306.3,Juan Pérez,2026-10-22,🟢 ESTABLE
-R0087,Los Tacos de Express,Buenos Aires,Bebidas,4.9,4.9,-0.03,9.5,32,433,367,18.0,0,78,467.12,Juan Pérez,2026-08-10,🟢 ESTABLE
-R0096,Sushi El Portal,CDMX,Farmacia,4.3,4.1,0.23,7.9,23,449,424,5.9,3,76,409.96,Juan Pérez,2026-08-27,🟢 ESTABLE
-R0120,Mariscos La Abuela,Lima,Comida,4.9,4.8,0.07,8.9,29,286,275,4.1,3,66,373.9,Juan Pérez,2026-03-13,🟢 ESTABLE
-R0135,La Cocina de Express,Santiago,Comida,4.3,4.1,0.17,9.3,27,433,442,-2.1,2,76,388.97,Juan Pérez,2024-11-29,🟢 ESTABLE
-R0138,Sushi La Esquina,CDMX,Comida,4.6,4.5,0.12,7.1,27,450,471,-4.5,2,91,181.03,Juan Pérez,2027-05-29,🟢 ESTABLE
-R0140,El Mercado de El Rey,Buenos Aires,Comida,5.0,4.9,0.25,2.2,29,140,141,-0.5,4,77,359.81,Juan Pérez,2024-03-08,🟢 ESTABLE
-R0156,El Mercado de Del Norte 7,Lima,Comida,4.9,4.7,0.22,7.2,20,336,296,13.6,2,66,213.21,Juan Pérez,2024-08-03,🟢 ESTABLE
-R0168,Taquería Gourmet 3,CDMX,Mercado,3.2,3.3,-0.06,12.9,40,100,121,-17.6,13,43,273.35,Juan Pérez,2026-06-08,🟡 EN RIESGO
-R0192,Tortas El Centro 9,Bogotá,Comida,4.8,4.8,-0.03,9.6,19,363,315,15.1,5,88,402.94,Juan Pérez,2025-12-20,🟢 ESTABLE
-R0198,El Asadero Del Barrio 4,Lima,Comida,3.4,3.7,-0.35,12.0,49,70,81,-13.9,13,41,274.34,Juan Pérez,2026-09-12,🟡 EN RIESGO
-R0199,El Rincón Express,Lima,Comida,4.7,4.7,0.02,7.3,37,100,100,0.4,2,69,211.01,Juan Pérez,2026-02-27,🟢 ESTABLE
-R0006,El Mercado de El Torito,CDMX,Farmacia,4.9,4.8,0.13,7.5,24,415,386,7.5,5,79,228.58,María López,2025-07-19,🟢 ESTABLE
-R0028,Café El Portal,São Paulo,Comida,5.0,4.8,0.19,3.7,27,421,400,5.2,3,87,280.52,María López,2025-03-28,🟢 ESTABLE
-R0046,Pizzería Del Barrio,Querétaro,Mercado,4.3,4.3,0.02,7.4,22,220,229,-3.9,0,82,279.33,María López,2027-09-28,🟢 ESTABLE
-R0066,La Cocina de El Portal 9,Buenos Aires,Mercado,3.8,3.9,-0.13,12.8,60,75,90,-16.7,8,49,160.1,María López,2027-09-08,🟡 EN RIESGO
-R0082,El Rincón Don Chuy,Tijuana,Comida,4.6,4.6,0.02,4.1,18,172,147,16.7,4,86,316.27,María López,2027-09-18,🟢 ESTABLE
-R0091,El Fogón El Rey 9,Santiago,Mercado,3.9,4.0,-0.14,10.5,60,103,115,-10.2,10,49,196.1,María López,2024-07-05,🟡 EN RIESGO
-R0112,Cevichería Del Norte,Santiago,Farmacia,4.7,4.8,-0.07,4.6,33,349,331,5.3,3,91,375.47,María López,2025-12-10,🟢 ESTABLE
-R0113,Cevichería La Esquina,CDMX,Comida,5.0,4.8,0.21,6.8,23,146,138,5.8,0,91,222.21,María López,2025-11-13,🟢 ESTABLE
-R0122,La Fonda de El Portal,Santiago,Comida,4.4,4.5,-0.08,2.2,28,322,298,8.0,1,84,483.66,María López,2026-01-01,🟢 ESTABLE
-R0143,Café La Plaza 7,Puebla,Mercado,5.0,4.8,0.29,5.7,31,233,229,1.9,4,95,381.17,María López,2027-09-04,🟢 ESTABLE
-R0150,El Fogón El Centro,Monterrey,Comida,3.2,3.3,-0.11,10.6,35,82,100,-17.9,15,37,130.87,María López,2024-03-19,🟡 EN RIESGO
-R0166,Tortas La Esquina,Guadalajara,Mercado,3.4,3.6,-0.16,12.7,46,80,92,-13.1,15,48,230.47,María López,2026-02-05,🟡 EN RIESGO
-R0180,Cevichería Don Chuy,CDMX,Comida,4.9,4.8,0.08,1.0,31,183,153,19.9,1,93,401.0,María López,2025-09-13,🟢 ESTABLE
-R0188,El Fogón Fusión,Puebla,Mercado,4.6,4.4,0.16,5.8,22,222,229,-2.9,0,81,493.11,María López,2027-03-04,🟢 ESTABLE
-R0200,Los Tacos de El Torito,Buenos Aires,Comida,3.2,3.3,-0.07,20.3,52,100,119,-16.3,12,33,248.62,María López,2024-11-04,🟡 EN RIESGO
-R0007,Burritos La Plaza,Tijuana,Mercado,4.5,4.2,0.3,5.6,20,104,89,16.5,1,85,234.39,Paula Herrera,2027-07-05,🟢 ESTABLE
-R0022,El Rincón El Centro,Medellín,Comida,4.4,4.4,0.01,1.0,22,406,340,19.5,1,88,330.22,Paula Herrera,2027-04-23,🟢 ESTABLE
-R0026,El Fogón El Rey,Medellín,Farmacia,3.6,3.9,-0.28,10.3,43,52,59,-11.3,9,31,137.34,Paula Herrera,2026-02-06,🟡 EN RIESGO
-R0035,Taquería 100% Natural 6,Buenos Aires,Comida,3.8,3.9,-0.07,15.0,58,99,108,-8.0,8,45,155.11,Paula Herrera,2026-11-20,🟢 ESTABLE
-R0043,La Fonda de 100% Natural,Monterrey,Comida,3.4,3.5,-0.09,18.4,43,101,126,-19.8,8,32,158.62,Paula Herrera,2026-11-26,🟡 EN RIESGO
-R0048,Sushi La Plaza,CDMX,Comida,1.4,2.1,-0.75,32.3,81,43,60,-28.9,34,7,157.57,Paula Herrera,2026-09-09,🔴 CRÍTICO
-R0060,El Mercado de Artesanal,Barranquilla,Bebidas,4.1,4.0,0.1,6.3,21,305,313,-2.5,3,65,425.63,Paula Herrera,2027-11-01,🟢 ESTABLE
-R0068,El Rincón El Rápido,Medellín,Comida,2.0,2.4,-0.38,37.7,84,9,15,-41.2,45,7,166.01,Paula Herrera,2027-04-16,🔴 CRÍTICO
-R0078,El Fogón El Portal,Lima,Comida,4.7,4.7,-0.05,6.9,35,449,385,16.6,3,79,481.95,Paula Herrera,2026-01-24,🟢 ESTABLE
-R0085,Tortas El Rey,Lima,Comida,1.3,2.1,-0.78,40.8,63,21,33,-37.2,18,0,129.74,Paula Herrera,2025-02-23,🔴 CRÍTICO
-R0086,Parrilla Casero,Guadalajara,Bebidas,5.0,4.8,0.22,1.6,19,303,317,-4.5,0,92,286.44,Paula Herrera,2027-05-19,🟢 ESTABLE
-R0105,Parrilla El Rápido,Lima,Bebidas,4.7,4.7,-0.02,4.2,19,415,402,3.3,0,90,305.13,Paula Herrera,2026-08-18,🟢 ESTABLE
-R0116,La Fonda de La Plaza,CDMX,Mercado,4.7,4.6,0.1,6.6,27,408,343,18.9,3,72,453.59,Paula Herrera,2025-10-31,🟢 ESTABLE
-R0131,El Asadero La Plaza,Lima,Comida,4.9,4.7,0.24,1.3,23,293,250,17.1,1,94,492.68,Paula Herrera,2026-12-10,🟢 ESTABLE
-R0133,Pizzería Gourmet,Medellín,Comida,4.4,4.4,0.0,2.7,28,231,212,9.2,1,70,387.72,Paula Herrera,2026-07-24,🟢 ESTABLE
-R0139,Burritos 100% Natural,CDMX,Comida,3.2,3.6,-0.38,20.7,50,34,40,-15.7,7,54,141.67,Paula Herrera,2026-04-06,🔴 CRÍTICO
-R0155,La Cocina de La Familia 6,Bogotá,Comida,1.9,2.8,-0.88,40.4,75,6,7,-19.0,33,4,155.23,Paula Herrera,2024-08-05,🔴 CRÍTICO
-R0162,La Fonda de El Rápido,Lima,Farmacia,5.0,4.9,0.29,3.6,38,331,278,19.2,1,75,307.86,Paula Herrera,2026-03-18,🟢 ESTABLE
-R0163,Parrilla Premium,Guadalajara,Comida,3.5,3.6,-0.07,15.5,57,56,65,-13.4,9,56,230.85,Paula Herrera,2026-12-18,🟡 EN RIESGO
-R0197,El Fogón Artesanal,CDMX,Comida,3.3,3.5,-0.19,10.7,56,46,55,-16.4,9,57,170.4,Paula Herrera,2025-12-29,🟡 EN RIESGO
-R0013,Tortas La Familia 2,Bogotá,Comida,1.3,2.1,-0.76,34.7,68,39,67,-41.4,44,28,137.1,Roberto Sánchez,2025-07-11,🔴 CRÍTICO
-R0016,Burger Fusión,CDMX,Comida,4.3,4.2,0.06,1.5,30,81,68,19.6,2,94,446.58,Roberto Sánchez,2025-10-06,🟢 ESTABLE
-R0019,El Rincón Del Barrio,Puebla,Farmacia,3.2,3.5,-0.31,11.6,55,68,78,-13.1,17,59,131.61,Roberto Sánchez,2027-08-25,🟡 EN RIESGO
-R0029,Burger El Portal,São Paulo,Bebidas,3.4,3.5,-0.11,13.6,41,85,93,-8.2,14,50,171.56,Roberto Sánchez,2026-08-23,🟡 EN RIESGO
-R0037,Cevichería Premium,São Paulo,Comida,4.3,4.3,-0.02,3.9,30,222,195,13.8,3,73,463.87,Roberto Sánchez,2024-04-09,🟢 ESTABLE
-R0038,Carnitas Casero,Tijuana,Comida,3.6,3.8,-0.17,19.1,42,55,59,-7.4,14,34,158.17,Roberto Sánchez,2024-10-21,🟡 EN RIESGO
-R0042,El Rincón Gourmet,Cali,Bebidas,2.4,3.2,-0.85,39.4,70,34,48,-29.6,36,12,113.64,Roberto Sánchez,2025-12-26,🔴 CRÍTICO
-R0045,Carnitas Clásico,Tijuana,Farmacia,4.2,4.2,-0.05,2.7,21,354,298,18.8,5,70,245.12,Roberto Sánchez,2025-09-18,🟢 ESTABLE
-R0053,Taquería El Torito,CDMX,Comida,3.5,3.8,-0.34,16.2,49,65,79,-17.3,14,43,221.57,Roberto Sánchez,2024-09-03,🔴 CRÍTICO
-R0058,El Rincón Fusión,Guadalajara,Comida,4.7,4.7,0.01,1.0,27,380,347,9.5,5,80,474.19,Roberto Sánchez,2027-03-09,🟢 ESTABLE
-R0061,Mariscos El Torito,Guadalajara,Comida,4.8,4.6,0.16,8.7,35,274,230,18.9,5,87,481.73,Roberto Sánchez,2027-03-14,🟢 ESTABLE
-R0076,El Fogón Casero,Guadalajara,Comida,1.7,2.1,-0.43,39.1,88,24,36,-32.6,45,0,86.08,Roberto Sánchez,2026-06-01,🔴 CRÍTICO
-R0084,Cevichería Fusión,CDMX,Mercado,4.4,4.4,0.01,7.8,21,256,242,5.7,2,86,410.69,Roberto Sánchez,2027-02-13,🟢 ESTABLE
-R0089,El Rincón Del Barrio 4,Guadalajara,Comida,3.6,3.8,-0.17,12.1,59,110,126,-12.6,17,48,241.58,Roberto Sánchez,2027-05-01,🟡 EN RIESGO
-R0100,Café Express,Bogotá,Comida,3.6,3.7,-0.12,11.7,44,90,100,-9.6,7,54,232.89,Roberto Sánchez,2027-08-13,🟢 ESTABLE
-R0101,La Fonda de Artesanal 8,CDMX,Comida,4.3,4.3,0.02,1.4,31,407,355,14.8,3,67,217.69,Roberto Sánchez,2027-07-06,🟢 ESTABLE
-R0109,Carnitas 100% Natural 9,Buenos Aires,Comida,3.5,3.7,-0.21,14.8,55,65,78,-16.3,6,30,237.71,Roberto Sánchez,2027-01-25,🟡 EN RIESGO
-R0110,El Rincón El Torito,Buenos Aires,Comida,3.2,3.4,-0.19,18.3,50,55,67,-18.2,18,32,192.33,Roberto Sánchez,2024-08-27,🟡 EN RIESGO
-R0111,Parrilla La Abuela 6,Lima,Farmacia,2.8,3.1,-0.34,34.0,78,37,61,-38.9,21,25,93.89,Roberto Sánchez,2024-04-23,🔴 CRÍTICO
-R0125,La Cocina de La Plaza,Guadalajara,Comida,1.3,2.2,-0.89,26.9,64,31,42,-26.4,28,16,157.5,Roberto Sánchez,2024-07-06,🔴 CRÍTICO
-R0144,La Cocina de 100% Natural,São Paulo,Comida,2.6,3.0,-0.43,27.0,81,31,53,-41.0,27,5,155.44,Roberto Sánchez,2025-07-07,🔴 CRÍTICO
-R0147,Mariscos Casero 5,CDMX,Comida,4.2,4.2,0.03,3.5,32,353,317,11.2,2,73,302.28,Roberto Sánchez,2026-10-11,🟢 ESTABLE
-R0167,Burritos La Familia 3,CDMX,Comida,3.5,3.8,-0.28,14.1,60,56,64,-12.2,10,45,135.62,Roberto Sánchez,2025-12-14,🟡 EN RIESGO
-R0172,Burritos Premium,Querétaro,Bebidas,4.8,4.5,0.27,9.4,23,364,367,-0.8,2,69,243.61,Roberto Sánchez,2027-08-21,🟢 ESTABLE
-R0173,Taquería El Rápido,CDMX,Farmacia,5.0,4.7,0.29,5.5,33,289,258,12.1,3,87,465.56,Roberto Sánchez,2025-02-06,🟢 ESTABLE
-R0178,El Asadero La Familia 8,Medellín,Bebidas,4.6,4.3,0.27,4.3,33,247,226,9.5,5,67,428.52,Roberto Sánchez,2027-09-22,🟢 ESTABLE
-R0183,Los Tacos de Artesanal,Lima,Farmacia,5.0,4.7,0.25,6.8,22,115,106,8.3,0,84,401.01,Roberto Sánchez,2026-02-18,🟢 ESTABLE
-R0008,El Mercado de El Portal,CDMX,Bebidas,2.5,2.8,-0.32,38.9,55,48,64,-25.5,36,28,133.7,Sofía Ramírez,2027-10-04,🔴 CRÍTICO
-R0010,Carnitas Premium,Bogotá,Comida,4.8,4.7,0.11,1.0,28,330,346,-4.5,2,93,515.01,Sofía Ramírez,2025-07-04,🟢 ESTABLE
-R0020,El Asadero Del Norte,Querétaro,Comida,4.5,4.2,0.27,8.9,25,269,263,2.1,3,91,364.69,Sofía Ramírez,2027-08-05,🟢 ESTABLE
-R0025,El Mercado de El Centro,Monterrey,Comida,1.9,2.3,-0.41,30.1,74,19,31,-39.0,36,6,119.85,Sofía Ramírez,2024-07-21,🔴 CRÍTICO
-R0050,Burger Don Chuy,Tijuana,Comida,4.7,4.6,0.09,1.3,27,441,432,2.1,3,67,413.71,Sofía Ramírez,2027-09-02,🟢 ESTABLE
-R0052,Cevichería La Abuela,Cali,Comida,3.8,4.0,-0.22,15.9,37,106,132,-19.4,11,53,171.57,Sofía Ramírez,2024-04-22,🟡 EN RIESGO
-R0065,El Rincón Clásico,Lima,Bebidas,3.1,3.4,-0.27,15.8,42,78,88,-11.4,14,39,278.83,Sofía Ramírez,2024-04-14,🟡 EN RIESGO
-R0072,Carnitas Del Barrio,Medellín,Comida,5.0,4.9,0.24,1.9,29,358,305,17.5,5,76,200.59,Sofía Ramírez,2025-03-24,🟢 ESTABLE
-R0092,Café La Familia,Cali,Comida,4.2,4.2,0.0,4.9,32,348,322,8.1,1,76,306.77,Sofía Ramírez,2026-05-03,🟢 ESTABLE
-R0097,Cevichería Casero,Córdoba,Mercado,4.5,4.3,0.22,5.2,24,268,239,12.0,4,79,336.97,Sofía Ramírez,2026-04-22,🟢 ESTABLE
-R0106,Burger El Rápido,Buenos Aires,Farmacia,3.4,3.5,-0.12,13.2,37,84,103,-18.8,14,56,148.87,Sofía Ramírez,2025-12-18,🟡 EN RIESGO
-R0107,Café La Abuela,Guadalajara,Comida,4.6,4.5,0.07,7.2,29,308,320,-3.9,2,84,519.37,Sofía Ramírez,2027-10-01,🟢 ESTABLE
-R0114,Café Casero,Monterrey,Comida,5.0,4.8,0.26,8.6,26,180,162,10.9,4,73,222.56,Sofía Ramírez,2027-08-11,🟢 ESTABLE
-R0126,Parrilla Gourmet,Guadalajara,Comida,2.0,2.7,-0.67,41.0,84,39,61,-35.8,26,21,157.2,Sofía Ramírez,2027-08-02,🔴 CRÍTICO
-R0130,Café El Rápido 3,Bogotá,Comida,3.2,3.3,-0.06,21.7,40,82,91,-10.2,12,45,224.09,Sofía Ramírez,2025-12-18,🟡 EN RIESGO
-R0148,Café Del Barrio,Guadalajara,Comida,4.5,4.4,0.13,3.0,22,88,87,1.5,4,83,424.8,Sofía Ramírez,2025-01-07,🟢 ESTABLE
-R0152,Taquería La Esquina,Tijuana,Mercado,3.6,3.7,-0.12,20.9,38,42,48,-12.1,8,36,219.16,Sofía Ramírez,2026-02-24,🔴 CRÍTICO
-R0158,El Rincón Artesanal 8,Lima,Comida,3.6,3.7,-0.14,13.8,38,41,51,-19.9,9,44,177.59,Sofía Ramírez,2024-09-26,🟡 EN RIESGO
-R0160,El Mercado de Premium,Querétaro,Comida,4.4,4.3,0.1,1.6,31,221,209,5.5,3,90,206.15,Sofía Ramírez,2025-07-19,🟢 ESTABLE
-R0195,Burritos Don Chuy,Guadalajara,Comida,4.5,4.3,0.24,8.9,28,80,70,14.0,3,92,430.95,Sofía Ramírez,2024-09-29,🟢 ESTABLE
-R0201,El Parrillero de Polanco,CDMX,Comida,2.3,3.8,-0.72,28.5,72,280,390,-28.2,34,12,385.5,Roberto Sánchez,2024-03-15,🔴 CRÍTICO
-R0202,Sushi Premium Chapultepec,CDMX,Comida,2.8,4.1,-0.61,24.3,65,310,410,-24.4,27,18,452.8,Isabella Moreno,2024-01-20,🔴 CRÍTICO
-R0203,Carnitas Don Pedro Reforma,Monterrey,Comida,3.6,4.3,-0.55,18.7,52,245,340,-27.9,19,32,310.25,Diego Vargas,2024-07-10,🟡 EN RIESGO
-R0204,La Fonda de Santa Fe,Bogotá,Comida,3.4,3.9,-0.38,16.2,48,220,275,-20.0,14,38,345.7,Paula Herrera,2025-02-01,🟡 EN RIESGO
-R0205,Burger House El Rosario,Lima,Comida,1.9,3.5,-0.85,35.2,82,195,360,-45.8,41,5,420.9,Juan Pérez,2023-11-05,🔴 CRÍTICO
+R0005,El Asadero El Portal,Bogotá,Mercado,3.3,3.6,-0.31,15.5,43,111,123,-9.7,8,51,171.89,Ana Torres,13/06/25,🟡 EN RIESGO
+R0054,Burritos Gourmet,Barranquilla,Farmacia,4.1,4.1,-0.04,4.7,33,227,203,11.6,3,91,438.57,Ana Torres,18/09/26,🟢 ESTABLE
+R0059,Café Del Norte,Barranquilla,Farmacia,3.4,3.5,-0.07,20.4,57,60,68,-11.4,8,57,244.09,Ana Torres,12/12/25,🟡 EN RIESGO
+R0062,Tortas La Abuela,CDMX,Comida,2.5,3.1,-0.64,22.2,95,50,64,-21.4,29,5,149.4,Ana Torres,03/06/24,🔴 CRÍTICO
+R0074,Tortas Gourmet,Querétaro,Comida,3.6,3.8,-0.19,13.3,39,46,52,-11.9,17,35,137.59,Ana Torres,25/11/24,🟡 EN RIESGO
+R0090,Café Artesanal,Córdoba,Farmacia,4.6,4.4,0.15,8.2,36,108,104,3.8,0,74,336.99,Ana Torres,25/06/24,🟢 ESTABLE
+R0103,La Cocina de El Rey 7,Puebla,Comida,4.2,4,0.22,4.1,38,133,116,14.3,5,89,293.06,Ana Torres,20/02/26,🟢 ESTABLE
+R0104,Burger Clásico,Tijuana,Farmacia,1.9,2.7,-0.79,23,84,7,11,-37.1,16,25,99.95,Ana Torres,07/12/25,🔴 CRÍTICO
+R0115,El Fogón Premium,Tijuana,Comida,3.4,3.7,-0.34,17.5,54,73,79,-7.4,14,31,252.04,Ana Torres,14/08/24,🟡 EN RIESGO
+R0119,Mariscos La Esquina,Bogotá,Comida,4.9,4.8,0.1,1.8,30,338,318,6.4,1,71,378.34,Ana Torres,12/06/24,🟢 ESTABLE
+R0123,Burger El Rey,Córdoba,Farmacia,2.4,3.1,-0.72,27.4,87,39,57,-31.8,33,9,127.49,Ana Torres,25/03/26,🔴 CRÍTICO
+R0134,Pizzería Premium 4,Puebla,Farmacia,4.7,4.8,-0.1,4.5,32,216,182,18.9,2,83,425.78,Ana Torres,18/08/25,🟢 ESTABLE
+R0141,Burritos Del Norte 8,CDMX,Mercado,3.1,3.4,-0.28,13.3,58,44,55,-19.5,15,43,218.39,Ana Torres,06/07/25,🟡 EN RIESGO
+R0142,Pizzería El Portal,Bogotá,Comida,4.7,4.5,0.18,1.4,19,285,269,6,4,71,436.49,Ana Torres,12/12/24,🟢 ESTABLE
+R0153,El Asadero 100% Natural,Medellín,Bebidas,2,2.7,-0.75,35.3,74,48,62,-22.6,17,20,179.17,Ana Torres,08/09/24,🔴 CRÍTICO
+R0186,El Mercado de La Abuela,Puebla,Comida,3.7,3.8,-0.12,12.9,47,44,53,-16.4,15,49,131.36,Ana Torres,10/03/26,🟡 EN RIESGO
+R0187,El Mercado de La Plaza,Lima,Comida,4.5,4.5,-0.03,5.2,20,88,80,9.7,0,73,253.35,Ana Torres,25/05/26,🟢 ESTABLE
+R0189,Burritos Casero 2,Lima,Bebidas,4.8,4.8,-0.05,6.5,19,238,213,11.7,5,88,239.72,Ana Torres,07/12/24,🟢 ESTABLE
+R0030,Los Tacos de La Esquina 7,Bogotá,Comida,4.9,4.9,-0.01,3.8,24,155,162,-4.4,1,80,387.83,Carlos Mendoza,19/09/26,🟢 ESTABLE
+R0036,Café El Rey,CDMX,Bebidas,3.8,3.9,-0.08,21.8,52,33,35,-6.4,14,48,226.08,Carlos Mendoza,08/10/27,🟡 EN RIESGO
+R0056,Los Tacos de Clásico,Tijuana,Comida,1.8,2.7,-0.88,33.9,70,50,84,-40.7,32,0,135.23,Carlos Mendoza,04/06/25,🔴 CRÍTICO
+R0070,Tortas La Familia,CDMX,Farmacia,3.5,3.6,-0.15,17.8,38,47,58,-19.3,5,39,279.35,Carlos Mendoza,16/09/24,🟡 EN RIESGO
+R0080,Parrilla Del Norte,Tijuana,Comida,4.1,4.1,0.04,7,31,449,466,-3.7,2,84,286.23,Carlos Mendoza,28/05/27,🟢 ESTABLE
+R0098,Burger Del Barrio,Puebla,Bebidas,3,3.3,-0.31,17.7,46,100,106,-6,16,57,202.55,Carlos Mendoza,05/10/25,🟡 EN RIESGO
+R0099,El Fogón Artesanal 8,CDMX,Comida,5,4.8,0.23,9,18,292,303,-3.7,4,76,260.16,Carlos Mendoza,07/04/26,🟢 ESTABLE
+R0145,La Cocina de Del Norte 8,Bogotá,Mercado,2,2.8,-0.82,25.3,68,26,36,-27.5,44,14,164.71,Carlos Mendoza,02/03/27,🔴 CRÍTICO
+R0157,Café Don Chuy,Lima,Bebidas,3.6,3.8,-0.24,12.7,52,78,90,-13.5,15,48,225.71,Carlos Mendoza,19/08/27,🟡 EN RIESGO
+R0165,Tortas 100% Natural,CDMX,Comida,4.7,4.6,0.13,6.8,38,284,238,19.2,2,95,450.72,Carlos Mendoza,22/03/24,🟢 ESTABLE
+R0169,Burritos El Rey,Monterrey,Comida,4.6,4.6,-0.02,6.3,30,82,73,12.6,1,73,435.79,Carlos Mendoza,27/05/27,🟢 ESTABLE
+R0175,La Fonda de Fusión 3,Tijuana,Comida,3.4,3.7,-0.31,20.5,36,87,104,-16.1,18,56,133.92,Carlos Mendoza,29/06/25,🔴 CRÍTICO
+R0181,El Rincón La Familia,CDMX,Farmacia,4.8,4.8,-0.03,4.6,27,438,385,13.9,3,85,211.01,Carlos Mendoza,03/03/24,🟢 ESTABLE
+R0182,Tortas La Esquina 9,Bogotá,Comida,4.8,4.6,0.23,9.9,31,435,443,-1.7,0,72,310.24,Carlos Mendoza,28/09/24,🟢 ESTABLE
+R0193,Café El Torito,Bogotá,Bebidas,3.3,3.7,-0.36,18.1,36,52,62,-16.7,13,31,272.65,Carlos Mendoza,09/10/26,🔴 CRÍTICO
+R0002,Parrilla Fusión,CDMX,Comida,4.7,4.5,0.22,1.1,23,437,414,5.6,2,69,253.21,Diego Vargas,26/09/24,🟢 ESTABLE
+R0004,El Asadero El Centro,Querétaro,Comida,3.7,3.8,-0.06,20.3,38,78,93,-15.8,15,56,178.37,Diego Vargas,26/02/26,🟡 EN RIESGO
+R0014,La Fonda de Express,Barranquilla,Bebidas,4.5,4.4,0.07,5.2,19,424,381,11.3,5,68,200.61,Diego Vargas,10/10/24,🟢 ESTABLE
+R0021,Parrilla La Abuela,Puebla,Comida,1.8,2.2,-0.37,25.8,61,40,68,-40.8,24,19,101.06,Diego Vargas,21/04/25,🔴 CRÍTICO
+R0040,Pizzería La Abuela,Querétaro,Comida,2.1,2.9,-0.83,41.6,57,27,39,-30.6,36,11,86.9,Diego Vargas,26/03/24,🔴 CRÍTICO
+R0044,Mariscos El Rápido,Tijuana,Comida,4,4,0.02,4.6,25,236,211,11.6,2,80,368.18,Diego Vargas,20/07/26,🟢 ESTABLE
+R0064,Tortas Clásico,Querétaro,Comida,3.4,3.6,-0.17,20.8,49,66,73,-9.8,7,32,190.68,Diego Vargas,17/06/27,🟡 EN RIESGO
+R0079,Café Fusión 7,Cali,Bebidas,3.1,3.5,-0.35,21.1,37,41,44,-7.5,6,43,135.45,Diego Vargas,22/11/24,🔴 CRÍTICO
+R0088,El Fogón La Familia,Querétaro,Bebidas,4.3,4.3,0.04,4,23,119,110,7.8,0,81,353.38,Diego Vargas,18/02/26,🟢 ESTABLE
+R0093,La Cocina de Gourmet,São Paulo,Farmacia,4.3,4.1,0.17,3.6,37,156,151,3.3,4,86,228.09,Diego Vargas,26/11/25,🟢 ESTABLE
+R0102,El Fogón La Plaza,Tijuana,Comida,4.2,4.1,0.07,6.5,25,372,353,5.4,5,86,209.11,Diego Vargas,17/07/24,🟢 ESTABLE
+R0108,El Mercado de 100% Natural,CDMX,Comida,4.7,4.7,-0.04,1.3,37,427,373,14.5,0,69,202.86,Diego Vargas,12/03/26,🟢 ESTABLE
+R0117,La Cocina de Premium,Cali,Comida,4.4,4.4,-0.02,6.5,28,447,434,3,2,77,224.46,Diego Vargas,19/01/27,🟢 ESTABLE
+R0121,El Asadero El Rey,Tijuana,Mercado,4.7,4.7,0.01,9.9,37,140,143,-1.8,0,77,306.89,Diego Vargas,17/04/27,🟢 ESTABLE
+R0127,Tortas El Torito,Barranquilla,Comida,3.3,3.4,-0.06,13.6,44,120,144,-16.9,16,45,170.73,Diego Vargas,22/04/27,🟡 EN RIESGO
+R0128,Pizzería La Plaza,Medellín,Mercado,3.4,3.5,-0.06,19.8,59,48,57,-15.6,9,60,234.26,Diego Vargas,23/08/26,🟡 EN RIESGO
+R0146,El Rincón El Rey,Bogotá,Comida,3.6,3.7,-0.09,12.3,59,105,116,-9.1,13,36,196.7,Diego Vargas,11/11/25,🟢 ESTABLE
+R0170,Carnitas Gourmet,Guadalajara,Comida,4.3,4.1,0.17,5.4,38,240,218,9.9,4,77,379.58,Diego Vargas,19/02/26,🟢 ESTABLE
+R0179,Parrilla El Rey,Santiago,Comida,4.4,4.4,-0.02,3.4,27,252,232,8.7,1,83,469.82,Diego Vargas,08/06/24,🟢 ESTABLE
+R0184,Burritos El Portal,Bogotá,Comida,3.5,3.9,-0.37,11.2,59,45,51,-11.2,11,41,274.12,Diego Vargas,12/12/24,🟡 EN RIESGO
+R0190,Mariscos 100% Natural,CDMX,Comida,4.9,4.7,0.19,2.5,22,217,192,13.3,0,89,485.97,Diego Vargas,28/07/26,🟢 ESTABLE
+R0196,Burritos El Rápido,Bogotá,Comida,2.7,3.5,-0.81,26.2,57,19,24,-20.8,31,13,150.08,Diego Vargas,25/09/26,🔴 CRÍTICO
+R0003,Pizzería 100% Natural,CDMX,Bebidas,3.6,3.7,-0.12,18.8,52,45,48,-5.4,11,32,208.33,Fernando Castro,11/03/26,🟡 EN RIESGO
+R0011,El Asadero La Familia,CDMX,Comida,3.8,3.9,-0.06,16.4,39,46,51,-10.1,13,35,162.41,Fernando Castro,15/07/26,🟡 EN RIESGO
+R0018,Burger La Familia,CDMX,Comida,3.4,3.7,-0.32,11.4,53,61,69,-11.3,5,49,133.12,Fernando Castro,02/05/27,🟡 EN RIESGO
+R0047,Taquería La Plaza,Barranquilla,Comida,4.4,4.4,0.04,9.7,26,324,331,-2.1,0,77,347.19,Fernando Castro,11/09/27,🟢 ESTABLE
+R0051,Burritos Express,Querétaro,Comida,4.9,4.6,0.26,8.4,20,110,111,-0.9,2,84,434.65,Fernando Castro,13/10/25,🟢 ESTABLE
+R0057,Pizzería Artesanal,Guadalajara,Comida,4.7,4.6,0.1,3.5,33,321,318,1.1,4,69,310.42,Fernando Castro,05/01/27,🟢 ESTABLE
+R0071,El Mercado de Clásico,Bogotá,Comida,5,4.9,0.18,5.9,36,159,136,17.1,5,68,463.46,Fernando Castro,14/06/26,🟢 ESTABLE
+R0077,Mariscos Clásico,São Paulo,Comida,4.2,4.1,0.14,1.6,26,399,360,10.8,4,87,290.56,Fernando Castro,20/02/27,🟢 ESTABLE
+R0081,Sushi El Rápido,Puebla,Comida,4.3,4.1,0.24,4.3,26,373,370,0.7,3,92,370.73,Fernando Castro,09/08/27,🟢 ESTABLE
+R0083,El Fogón Del Barrio,CDMX,Comida,4.4,4.4,-0.04,3.8,28,370,337,9.9,0,69,233.52,Fernando Castro,10/06/24,🟢 ESTABLE
+R0118,Cevichería Express 6,Tijuana,Comida,4,4.1,-0.08,9.5,37,294,291,1.2,1,91,291.33,Fernando Castro,01/12/25,🟢 ESTABLE
+R0124,Los Tacos de Don Chuy 9,Lima,Comida,4.9,4.6,0.29,6.2,25,449,466,-3.7,3,70,358.24,Fernando Castro,18/04/26,🟢 ESTABLE
+R0161,Cevichería Express,Barranquilla,Comida,4.1,4,0.06,8.6,30,248,234,6,3,91,460,Fernando Castro,04/12/24,🟢 ESTABLE
+R0171,Los Tacos de El Portal,Cali,Comida,3.4,3.7,-0.29,12.9,38,53,62,-14.4,7,46,182.15,Fernando Castro,08/12/24,🟡 EN RIESGO
+R0177,La Cocina de El Torito,Guadalajara,Bebidas,1.8,2.2,-0.38,25.5,75,20,26,-24.4,36,12,128.95,Fernando Castro,17/09/27,🔴 CRÍTICO
+R0191,El Rincón La Plaza,Medellín,Comida,3.4,3.6,-0.22,10.7,53,51,60,-14.5,9,54,136.46,Fernando Castro,23/10/24,🟡 EN RIESGO
+R0001,El Rincón Casero,Guadalajara,Comida,4.9,4.7,0.17,9,20,382,362,5.5,0,67,254.34,Isabella Moreno,16/07/27,🟢 ESTABLE
+R0009,Los Tacos de Fusión,Lima,Comida,4.2,4,0.19,7.5,34,171,159,7.7,0,92,392.6,Isabella Moreno,31/07/27,🟢 ESTABLE
+R0015,La Fonda de Del Norte,Bogotá,Comida,4.4,4.4,0.01,3.2,20,306,266,15.2,4,68,197.2,Isabella Moreno,31/03/24,🟢 ESTABLE
+R0017,Sushi Del Barrio,São Paulo,Comida,5,4.9,0.13,5.9,28,109,113,-3.7,3,81,492.59,Isabella Moreno,17/01/25,🟢 ESTABLE
+R0031,El Mercado de El Rápido,São Paulo,Comida,4.3,4.1,0.18,9,21,297,296,0.5,5,81,337.95,Isabella Moreno,24/07/25,🟢 ESTABLE
+R0032,Sushi Clásico,Guadalajara,Comida,3.8,4,-0.19,21.4,49,108,117,-7.8,13,43,252.89,Isabella Moreno,31/08/26,🟡 EN RIESGO
+R0041,Pizzería Fusión,São Paulo,Comida,2.6,3,-0.4,35.6,82,16,21,-25.2,45,20,107.01,Isabella Moreno,16/11/26,🔴 CRÍTICO
+R0067,La Cocina de La Plaza 7,Guadalajara,Comida,3,3.3,-0.3,19,40,55,67,-18,13,58,275.44,Isabella Moreno,23/12/26,🟡 EN RIESGO
+R0073,El Asadero Del Barrio,Guadalajara,Comida,3.3,3.7,-0.39,19.4,42,46,50,-8.2,8,32,252.77,Isabella Moreno,29/04/25,🟡 EN RIESGO
+R0075,Tortas La Plaza,CDMX,Farmacia,4.1,4.2,-0.08,7.7,34,138,121,13.6,3,79,444.53,Isabella Moreno,29/06/27,🟢 ESTABLE
+R0094,El Asadero La Abuela,Buenos Aires,Comida,3.4,3.7,-0.29,11.5,57,117,125,-6.3,6,50,227.27,Isabella Moreno,12/03/26,🟢 ESTABLE
+R0095,Los Tacos de Premium,CDMX,Farmacia,2.1,2.5,-0.44,24.2,63,14,25,-42.9,42,25,90.11,Isabella Moreno,12/02/27,🔴 CRÍTICO
+R0129,La Fonda de Del Barrio,Medellín,Comida,3.2,3.4,-0.2,13.3,38,108,119,-8.9,8,37,128.12,Isabella Moreno,06/06/25,🟡 EN RIESGO
+R0132,La Cocina de Don Chuy,Monterrey,Mercado,4.8,4.5,0.27,4,32,408,376,8.6,3,93,499.11,Isabella Moreno,15/10/26,🟢 ESTABLE
+R0136,Cevichería El Portal,Barranquilla,Comida,4.9,4.6,0.27,7.8,24,206,184,12,4,92,447.71,Isabella Moreno,01/09/26,🟢 ESTABLE
+R0137,Pizzería El Centro 5,Puebla,Farmacia,3,3.3,-0.29,16.2,38,117,141,-16.9,14,45,134.55,Isabella Moreno,30/08/26,🟡 EN RIESGO
+R0149,Tortas El Rápido 7,Bogotá,Farmacia,5,4.7,0.29,6.8,33,315,318,-0.8,2,70,227.59,Isabella Moreno,26/11/26,🟢 ESTABLE
+R0151,Carnitas El Centro,Bogotá,Comida,3.5,3.7,-0.18,15.8,50,32,40,-19.9,13,43,121.9,Isabella Moreno,14/09/25,🟡 EN RIESGO
+R0154,El Mercado de Del Norte,Buenos Aires,Bebidas,4.8,4.6,0.18,1.7,31,410,358,14.6,4,92,511.11,Isabella Moreno,27/05/24,🟢 ESTABLE
+R0159,Cevichería Del Norte 8,Guadalajara,Comida,4.2,4.1,0.12,6.4,28,277,291,-4.7,3,77,444.92,Isabella Moreno,11/07/25,🟢 ESTABLE
+R0164,Sushi Fusión 8,Guadalajara,Mercado,5,4.9,0.09,4.6,34,434,411,5.5,0,90,509.27,Isabella Moreno,30/06/27,🟢 ESTABLE
+R0174,La Cocina de El Torito 5,CDMX,Comida,4.3,4.2,0.08,7.7,33,361,335,7.8,4,68,271.08,Isabella Moreno,22/03/26,🟢 ESTABLE
+R0176,Sushi Del Barrio 5,Bogotá,Farmacia,3.5,3.7,-0.21,17.2,40,71,75,-5.3,9,39,211.64,Isabella Moreno,12/09/24,🟡 EN RIESGO
+R0185,El Asadero Casero,Bogotá,Mercado,3.5,3.7,-0.19,19.3,57,33,36,-7.3,15,58,168.26,Isabella Moreno,26/07/27,🟡 EN RIESGO
+R0194,Parrilla Clásico 2,Lima,Mercado,4.5,4.3,0.21,7.7,25,317,304,4.2,3,89,443.8,Isabella Moreno,16/07/25,🟢 ESTABLE
+R0012,Los Tacos de El Rey,Bogotá,Comida,2.4,3,-0.64,31.4,62,20,33,-38.9,25,0,138.83,Juan Perez,19/06/27,🔴 CRÍTICO
+R0023,El Asadero Artesanal,CDMX,Comida,4.9,4.8,0.13,2.3,22,101,98,2.7,0,93,301.66,Juan Perez,27/09/24,🟢 ESTABLE
+R0024,Sushi Casero,Santiago,Bebidas,3.1,3.5,-0.41,39.4,56,16,21,-25.1,25,25,173.08,Juan Perez,29/08/25,🔴 CRÍTICO
+R0027,El Fogón Express,Lima,Bebidas,4.5,4.5,0,7.4,18,346,293,18.1,4,86,424.61,Juan Perez,16/03/26,🟢 ESTABLE
+R0033,Cevichería El Torito,Monterrey,Comida,3.6,3.9,-0.3,19.3,50,110,132,-16.4,12,32,234.17,Juan Perez,08/09/25,🟡 EN RIESGO
+R0034,Parrilla La Familia,Lima,Farmacia,4.4,4.2,0.18,7.4,20,292,278,5.2,4,79,321.36,Juan Perez,09/07/26,🟢 ESTABLE
+R0039,Carnitas Premium 3,Querétaro,Comida,3,3.3,-0.29,16.9,44,103,114,-9.8,11,42,270.64,Juan Perez,03/08/24,🟡 EN RIESGO
+R0049,Burritos La Abuela,Cali,Mercado,3.1,3.2,-0.06,11.2,59,56,63,-10.6,9,51,132.99,Juan Perez,19/02/25,🟢 ESTABLE
+R0055,Pizzería El Rey 2,CDMX,Farmacia,3.3,3.6,-0.26,12.3,46,109,119,-8.7,15,44,241.6,Juan Perez,29/08/25,🟡 EN RIESGO
+R0063,Los Tacos de 100% Natural,Lima,Comida,4.2,4.1,0.11,6.1,23,167,168,-0.6,4,92,310.07,Juan Perez,15/12/26,🟢 ESTABLE
+R0069,El Mercado de Don Chuy,Santiago,Comida,4.1,4.1,0.05,7.7,26,379,363,4.5,5,95,306.3,Juan Perez,22/10/26,🟢 ESTABLE
+R0087,Los Tacos de Express,Buenos Aires,Bebidas,4.9,4.9,-0.03,9.5,32,433,367,18,0,78,467.12,Juan Perez,10/08/26,🟢 ESTABLE
+R0096,Sushi El Portal,CDMX,Farmacia,4.3,4.1,0.23,7.9,23,449,424,5.9,3,76,409.96,Juan Perez,27/08/26,🟢 ESTABLE
+R0120,Mariscos La Abuela,Lima,Comida,4.9,4.8,0.07,8.9,29,286,275,4.1,3,66,373.9,Juan Perez,13/03/26,🟢 ESTABLE
+R0135,La Cocina de Express,Santiago,Comida,4.3,4.1,0.17,9.3,27,433,442,-2.1,2,76,388.97,Juan Perez,29/11/24,🟢 ESTABLE
+R0138,Sushi La Esquina,CDMX,Comida,4.6,4.5,0.12,7.1,27,450,471,-4.5,2,91,181.03,Juan Perez,29/05/27,🟢 ESTABLE
+R0140,El Mercado de El Rey,Buenos Aires,Comida,5,4.9,0.25,2.2,29,140,141,-0.5,4,77,359.81,Juan Perez,08/03/24,🟢 ESTABLE
+R0156,El Mercado de Del Norte 7,Lima,Comida,4.9,4.7,0.22,7.2,20,336,296,13.6,2,66,213.21,Juan Perez,03/08/24,🟢 ESTABLE
+R0168,Taquería Gourmet 3,CDMX,Mercado,3.2,3.3,-0.06,12.9,40,100,121,-17.6,13,43,273.35,Juan Perez,08/06/26,🟡 EN RIESGO
+R0192,Tortas El Centro 9,Bogotá,Comida,4.8,4.8,-0.03,9.6,19,363,315,15.1,5,88,402.94,Juan Perez,20/12/25,🟢 ESTABLE
+R0198,El Asadero Del Barrio 4,Lima,Comida,3.4,3.7,-0.35,12,49,70,81,-13.9,13,41,274.34,Juan Perez,12/09/26,🟡 EN RIESGO
+R0199,El Rincón Express,Lima,Comida,4.7,4.7,0.02,7.3,37,100,100,0.4,2,69,211.01,Juan Perez,27/02/26,🟢 ESTABLE
+R0006,El Mercado de El Torito,CDMX,Farmacia,4.9,4.8,0.13,7.5,24,415,386,7.5,5,79,228.58,Maria Lopez,19/07/25,🟢 ESTABLE
+R0028,Café El Portal,São Paulo,Comida,5,4.8,0.19,3.7,27,421,400,5.2,3,87,280.52,Maria Lopez,28/03/25,🟢 ESTABLE
+R0046,Pizzería Del Barrio,Querétaro,Mercado,4.3,4.3,0.02,7.4,22,220,229,-3.9,0,82,279.33,Maria Lopez,28/09/27,🟢 ESTABLE
+R0066,La Cocina de El Portal 9,Buenos Aires,Mercado,3.8,3.9,-0.13,12.8,60,75,90,-16.7,8,49,160.1,Maria Lopez,08/09/27,🟡 EN RIESGO
+R0082,El Rincón Don Chuy,Tijuana,Comida,4.6,4.6,0.02,4.1,18,172,147,16.7,4,86,316.27,Maria Lopez,18/09/27,🟢 ESTABLE
+R0091,El Fogón El Rey 9,Santiago,Mercado,3.9,4,-0.14,10.5,60,103,115,-10.2,10,49,196.1,Maria Lopez,05/07/24,🟡 EN RIESGO
+R0112,Cevichería Del Norte,Santiago,Farmacia,4.7,4.8,-0.07,4.6,33,349,331,5.3,3,91,375.47,Maria Lopez,10/12/25,🟢 ESTABLE
+R0113,Cevichería La Esquina,CDMX,Comida,5,4.8,0.21,6.8,23,146,138,5.8,0,91,222.21,Maria Lopez,13/11/25,🟢 ESTABLE
+R0122,La Fonda de El Portal,Santiago,Comida,4.4,4.5,-0.08,2.2,28,322,298,8,1,84,483.66,Maria Lopez,01/01/26,🟢 ESTABLE
+R0143,Café La Plaza 7,Puebla,Mercado,5,4.8,0.29,5.7,31,233,229,1.9,4,95,381.17,Maria Lopez,04/09/27,🟢 ESTABLE
+R0150,El Fogón El Centro,Monterrey,Comida,3.2,3.3,-0.11,10.6,35,82,100,-17.9,15,37,130.87,Maria Lopez,19/03/24,🟡 EN RIESGO
+R0166,Tortas La Esquina,Guadalajara,Mercado,3.4,3.6,-0.16,12.7,46,80,92,-13.1,15,48,230.47,Maria Lopez,05/02/26,🟡 EN RIESGO
+R0180,Cevichería Don Chuy,CDMX,Comida,4.9,4.8,0.08,1,31,183,153,19.9,1,93,401,Maria Lopez,13/09/25,🟢 ESTABLE
+R0188,El Fogón Fusión,Puebla,Mercado,4.6,4.4,0.16,5.8,22,222,229,-2.9,0,81,493.11,Maria Lopez,04/03/27,🟢 ESTABLE
+R0200,Los Tacos de El Torito,Buenos Aires,Comida,3.2,3.3,-0.07,20.3,52,100,119,-16.3,12,33,248.62,Maria Lopez,04/11/24,🟡 EN RIESGO
+R0007,Burritos La Plaza,Tijuana,Mercado,4.5,4.2,0.3,5.6,20,104,89,16.5,1,85,234.39,Paula Herrera,05/07/27,🟢 ESTABLE
+R0022,El Rincón El Centro,Medellín,Comida,4.4,4.4,0.01,1,22,406,340,19.5,1,88,330.22,Paula Herrera,23/04/27,🟢 ESTABLE
+R0026,El Fogón El Rey,Medellín,Farmacia,3.6,3.9,-0.28,10.3,43,52,59,-11.3,9,31,137.34,Paula Herrera,06/02/26,🟡 EN RIESGO
+R0035,Taquería 100% Natural 6,Buenos Aires,Comida,3.8,3.9,-0.07,15,58,99,108,-8,8,45,155.11,Paula Herrera,20/11/26,🟢 ESTABLE
+R0043,La Fonda de 100% Natural,Monterrey,Comida,3.4,3.5,-0.09,18.4,43,101,126,-19.8,8,32,158.62,Paula Herrera,26/11/26,🟡 EN RIESGO
+R0048,Sushi La Plaza,CDMX,Comida,1.4,2.1,-0.75,32.3,81,43,60,-28.9,34,7,157.57,Paula Herrera,09/09/26,🔴 CRÍTICO
+R0060,El Mercado de Artesanal,Barranquilla,Bebidas,4.1,4,0.1,6.3,21,305,313,-2.5,3,65,425.63,Paula Herrera,01/11/27,🟢 ESTABLE
+R0068,El Rincón El Rápido,Medellín,Comida,2,2.4,-0.38,37.7,84,9,15,-41.2,45,7,166.01,Paula Herrera,16/04/27,🔴 CRÍTICO
+R0078,El Fogón El Portal,Lima,Comida,4.7,4.7,-0.05,6.9,35,449,385,16.6,3,79,481.95,Paula Herrera,24/01/26,🟢 ESTABLE
+R0085,Tortas El Rey,Lima,Comida,1.3,2.1,-0.78,40.8,63,21,33,-37.2,18,0,129.74,Paula Herrera,23/02/25,🔴 CRÍTICO
+R0086,Parrilla Casero,Guadalajara,Bebidas,5,4.8,0.22,1.6,19,303,317,-4.5,0,92,286.44,Paula Herrera,19/05/27,🟢 ESTABLE
+R0105,Parrilla El Rápido,Lima,Bebidas,4.7,4.7,-0.02,4.2,19,415,402,3.3,0,90,305.13,Paula Herrera,18/08/26,🟢 ESTABLE
+R0116,La Fonda de La Plaza,CDMX,Mercado,4.7,4.6,0.1,6.6,27,408,343,18.9,3,72,453.59,Paula Herrera,31/10/25,🟢 ESTABLE
+R0131,El Asadero La Plaza,Lima,Comida,4.9,4.7,0.24,1.3,23,293,250,17.1,1,94,492.68,Paula Herrera,10/12/26,🟢 ESTABLE
+R0133,Pizzería Gourmet,Medellín,Comida,4.4,4.4,0,2.7,28,231,212,9.2,1,70,387.72,Paula Herrera,24/07/26,🟢 ESTABLE
+R0139,Burritos 100% Natural,CDMX,Comida,3.2,3.6,-0.38,20.7,50,34,40,-15.7,7,54,141.67,Paula Herrera,06/04/26,🔴 CRÍTICO
+R0155,La Cocina de La Familia 6,Bogotá,Comida,1.9,2.8,-0.88,40.4,75,6,7,-19,33,4,155.23,Paula Herrera,05/08/24,🔴 CRÍTICO
+R0162,La Fonda de El Rápido,Lima,Farmacia,5,4.9,0.29,3.6,38,331,278,19.2,1,75,307.86,Paula Herrera,18/03/26,🟢 ESTABLE
+R0163,Parrilla Premium,Guadalajara,Comida,3.5,3.6,-0.07,15.5,57,56,65,-13.4,9,56,230.85,Paula Herrera,18/12/26,🟡 EN RIESGO
+R0197,El Fogón Artesanal,CDMX,Comida,3.3,3.5,-0.19,10.7,56,46,55,-16.4,9,57,170.4,Paula Herrera,29/12/25,🟡 EN RIESGO
+R0013,Tortas La Familia 2,Bogotá,Comida,1.3,2.1,-0.76,34.7,68,39,67,-41.4,44,28,137.1,Roberto Sanchez,11/07/25,🔴 CRÍTICO
+R0016,Burger Fusión,CDMX,Comida,4.3,4.2,0.06,1.5,30,81,68,19.6,2,94,446.58,Roberto Sanchez,06/10/25,🟢 ESTABLE
+R0019,El Rincón Del Barrio,Puebla,Farmacia,3.2,3.5,-0.31,11.6,55,68,78,-13.1,17,59,131.61,Roberto Sanchez,25/08/27,🟡 EN RIESGO
+R0029,Burger El Portal,São Paulo,Bebidas,3.4,3.5,-0.11,13.6,41,85,93,-8.2,14,50,171.56,Roberto Sanchez,23/08/26,🟡 EN RIESGO
+R0037,Cevichería Premium,São Paulo,Comida,4.3,4.3,-0.02,3.9,30,222,195,13.8,3,73,463.87,Roberto Sanchez,09/04/24,🟢 ESTABLE
+R0038,Carnitas Casero,Tijuana,Comida,3.6,3.8,-0.17,19.1,42,55,59,-7.4,14,34,158.17,Roberto Sanchez,21/10/24,🟡 EN RIESGO
+R0042,El Rincón Gourmet,Cali,Bebidas,2.4,3.2,-0.85,39.4,70,34,48,-29.6,36,12,113.64,Roberto Sanchez,26/12/25,🔴 CRÍTICO
+R0045,Carnitas Clásico,Tijuana,Farmacia,4.2,4.2,-0.05,2.7,21,354,298,18.8,5,70,245.12,Roberto Sanchez,18/09/25,🟢 ESTABLE
+R0053,Taquería El Torito,CDMX,Comida,3.5,3.8,-0.34,16.2,49,65,79,-17.3,14,43,221.57,Roberto Sanchez,03/09/24,🔴 CRÍTICO
+R0058,El Rincón Fusión,Guadalajara,Comida,4.7,4.7,0.01,1,27,380,347,9.5,5,80,474.19,Roberto Sanchez,09/03/27,🟢 ESTABLE
+R0061,Mariscos El Torito,Guadalajara,Comida,4.8,4.6,0.16,8.7,35,274,230,18.9,5,87,481.73,Roberto Sanchez,14/03/27,🟢 ESTABLE
+R0076,El Fogón Casero,Guadalajara,Comida,1.7,2.1,-0.43,39.1,88,24,36,-32.6,45,0,86.08,Roberto Sanchez,01/06/26,🔴 CRÍTICO
+R0084,Cevichería Fusión,CDMX,Mercado,4.4,4.4,0.01,7.8,21,256,242,5.7,2,86,410.69,Roberto Sanchez,13/02/27,🟢 ESTABLE
+R0089,El Rincón Del Barrio 4,Guadalajara,Comida,3.6,3.8,-0.17,12.1,59,110,126,-12.6,17,48,241.58,Roberto Sanchez,01/05/27,🟡 EN RIESGO
+R0100,Café Express,Bogotá,Comida,3.6,3.7,-0.12,11.7,44,90,100,-9.6,7,54,232.89,Roberto Sanchez,13/08/27,🟢 ESTABLE
+R0101,La Fonda de Artesanal 8,CDMX,Comida,4.3,4.3,0.02,1.4,31,407,355,14.8,3,67,217.69,Roberto Sanchez,06/07/27,🟢 ESTABLE
+R0109,Carnitas 100% Natural 9,Buenos Aires,Comida,3.5,3.7,-0.21,14.8,55,65,78,-16.3,6,30,237.71,Roberto Sanchez,25/01/27,🟡 EN RIESGO
+R0110,El Rincón El Torito,Buenos Aires,Comida,3.2,3.4,-0.19,18.3,50,55,67,-18.2,18,32,192.33,Roberto Sanchez,27/08/24,🟡 EN RIESGO
+R0111,Parrilla La Abuela 6,Lima,Farmacia,2.8,3.1,-0.34,34,78,37,61,-38.9,21,25,93.89,Roberto Sanchez,23/04/24,🔴 CRÍTICO
+R0125,La Cocina de La Plaza,Guadalajara,Comida,1.3,2.2,-0.89,26.9,64,31,42,-26.4,28,16,157.5,Roberto Sanchez,06/07/24,🔴 CRÍTICO
+R0144,La Cocina de 100% Natural,São Paulo,Comida,2.6,3,-0.43,27,81,31,53,-41,27,5,155.44,Roberto Sanchez,07/07/25,🔴 CRÍTICO
+R0147,Mariscos Casero 5,CDMX,Comida,4.2,4.2,0.03,3.5,32,353,317,11.2,2,73,302.28,Roberto Sanchez,11/10/26,🟢 ESTABLE
+R0167,Burritos La Familia 3,CDMX,Comida,3.5,3.8,-0.28,14.1,60,56,64,-12.2,10,45,135.62,Roberto Sanchez,14/12/25,🟡 EN RIESGO
+R0172,Burritos Premium,Querétaro,Bebidas,4.8,4.5,0.27,9.4,23,364,367,-0.8,2,69,243.61,Roberto Sanchez,21/08/27,🟢 ESTABLE
+R0173,Taquería El Rápido,CDMX,Farmacia,5,4.7,0.29,5.5,33,289,258,12.1,3,87,465.56,Roberto Sanchez,06/02/25,🟢 ESTABLE
+R0178,El Asadero La Familia 8,Medellín,Bebidas,4.6,4.3,0.27,4.3,33,247,226,9.5,5,67,428.52,Roberto Sanchez,22/09/27,🟢 ESTABLE
+R0183,Los Tacos de Artesanal,Lima,Farmacia,5,4.7,0.25,6.8,22,115,106,8.3,0,84,401.01,Roberto Sanchez,18/02/26,🟢 ESTABLE
+R0008,El Mercado de El Portal,CDMX,Bebidas,2.5,2.8,-0.32,38.9,55,48,64,-25.5,36,28,133.7,Sofia Ramirez,04/10/27,🔴 CRÍTICO
+R0010,Carnitas Premium,Bogotá,Comida,4.8,4.7,0.11,1,28,330,346,-4.5,2,93,515.01,Sofia Ramirez,04/07/25,🟢 ESTABLE
+R0020,El Asadero Del Norte,Querétaro,Comida,4.5,4.2,0.27,8.9,25,269,263,2.1,3,91,364.69,Sofia Ramirez,05/08/27,🟢 ESTABLE
+R0025,El Mercado de El Centro,Monterrey,Comida,1.9,2.3,-0.41,30.1,74,19,31,-39,36,6,119.85,Sofia Ramirez,21/07/24,🔴 CRÍTICO
+R0050,Burger Don Chuy,Tijuana,Comida,4.7,4.6,0.09,1.3,27,441,432,2.1,3,67,413.71,Sofia Ramirez,02/09/27,🟢 ESTABLE
+R0052,Cevichería La Abuela,Cali,Comida,3.8,4,-0.22,15.9,37,106,132,-19.4,11,53,171.57,Sofia Ramirez,22/04/24,🟡 EN RIESGO
+R0065,El Rincón Clásico,Lima,Bebidas,3.1,3.4,-0.27,15.8,42,78,88,-11.4,14,39,278.83,Sofia Ramirez,14/04/24,🟡 EN RIESGO
+R0072,Carnitas Del Barrio,Medellín,Comida,5,4.9,0.24,1.9,29,358,305,17.5,5,76,200.59,Sofia Ramirez,24/03/25,🟢 ESTABLE
+R0092,Café La Familia,Cali,Comida,4.2,4.2,0,4.9,32,348,322,8.1,1,76,306.77,Sofia Ramirez,03/05/26,🟢 ESTABLE
+R0097,Cevichería Casero,Córdoba,Mercado,4.5,4.3,0.22,5.2,24,268,239,12,4,79,336.97,Sofia Ramirez,22/04/26,🟢 ESTABLE
+R0106,Burger El Rápido,Buenos Aires,Farmacia,3.4,3.5,-0.12,13.2,37,84,103,-18.8,14,56,148.87,Sofia Ramirez,18/12/25,🟡 EN RIESGO
+R0107,Café La Abuela,Guadalajara,Comida,4.6,4.5,0.07,7.2,29,308,320,-3.9,2,84,519.37,Sofia Ramirez,01/10/27,🟢 ESTABLE
+R0114,Café Casero,Monterrey,Comida,5,4.8,0.26,8.6,26,180,162,10.9,4,73,222.56,Sofia Ramirez,11/08/27,🟢 ESTABLE
+R0126,Parrilla Gourmet,Guadalajara,Comida,2,2.7,-0.67,41,84,39,61,-35.8,26,21,157.2,Sofia Ramirez,02/08/27,🔴 CRÍTICO
+R0130,Café El Rápido 3,Bogotá,Comida,3.2,3.3,-0.06,21.7,40,82,91,-10.2,12,45,224.09,Sofia Ramirez,18/12/25,🟡 EN RIESGO
+R0148,Café Del Barrio,Guadalajara,Comida,4.5,4.4,0.13,3,22,88,87,1.5,4,83,424.8,Sofia Ramirez,07/01/25,🟢 ESTABLE
+R0152,Taquería La Esquina,Tijuana,Mercado,3.6,3.7,-0.12,20.9,38,42,48,-12.1,8,36,219.16,Sofia Ramirez,24/02/26,🔴 CRÍTICO
+R0158,El Rincón Artesanal 8,Lima,Comida,3.6,3.7,-0.14,13.8,38,41,51,-19.9,9,44,177.59,Sofia Ramirez,26/09/24,🟡 EN RIESGO
+R0160,El Mercado de Premium,Querétaro,Comida,4.4,4.3,0.1,1.6,31,221,209,5.5,3,90,206.15,Sofia Ramirez,19/07/25,🟢 ESTABLE
+R0195,Burritos Don Chuy,Guadalajara,Comida,4.5,4.3,0.24,8.9,28,80,70,14,3,92,430.95,Sofia Ramirez,29/09/24,🟢 ESTABLE
+R0201,El Parrillero de Polanco,CDMX,Comida,2.3,3.8,-0.72,28.5,72,280,390,-28.2,34,12,385.5,Roberto Sanchez,15/03/24,🔴 CRÍTICO
+R0202,Sushi Premium Chapultepec,CDMX,Comida,2.8,4.1,-0.61,24.3,65,310,410,-24.4,27,18,452.8,Isabella Moreno,20/01/24,🔴 CRÍTICO
+R0203,Carnitas Don Pedro Reforma,Monterrey,Comida,3.6,4.3,-0.55,18.7,52,245,340,-27.9,19,32,310.25,Diego Vargas,10/07/24,🟡 EN RIESGO
+R0204,La Fonda de Santa Fe,Bogotá,Comida,3.4,3.9,-0.38,16.2,48,220,275,-20,14,38,345.7,Paula Herrera,01/02/25,🟡 EN RIESGO
+R0205,Burger House El Rosario,Lima,Comida,1.9,3.5,-0.85,35.2,82,195,360,-45.8,41,5,420.9,Juan Perez,05/11/23,🔴 CRÍTICO

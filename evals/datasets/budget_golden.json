@@ -1,0 +1,129 @@
+[
+  {
+    "id": "budget_01",
+    "description": "Check initial balance",
+    "kam_name": "Ana Torres",
+    "steps": [
+      {
+        "input": "How much budget do I have left?",
+        "expected_remaining": 10000.0
+      }
+    ]
+  },
+  {
+    "id": "budget_02",
+    "description": "Simple spend within budget",
+    "kam_name": "Ana Torres",
+    "steps": [
+      {
+        "input": "Log $500 promo spend on restaurant R0090",
+        "expected_remaining": 9500.0
+      }
+    ]
+  },
+  {
+    "id": "budget_03",
+    "description": "Multiple spends in sequence",
+    "kam_name": "Ana Torres",
+    "steps": [
+      {
+        "input": "Log $3000 growth investment on R0119",
+        "expected_remaining": 7000.0
+      },
+      {
+        "input": "Log $2000 promo on R0054",
+        "expected_remaining": 5000.0
+      },
+      {
+        "input": "What's my balance?",
+        "expected_remaining": 5000.0
+      }
+    ]
+  },
+  {
+    "id": "budget_04",
+    "description": "Spend that exactly exhausts budget",
+    "kam_name": "Ana Torres",
+    "steps": [
+      {
+        "input": "Log $10000 on R0119 for a major campaign",
+        "expected_remaining": 0.0
+      }
+    ]
+  },
+  {
+    "id": "budget_05",
+    "description": "Spend exceeding budget triggers escalation",
+    "kam_name": "Ana Torres",
+    "steps": [
+      {
+        "input": "Log $15000 on R0119",
+        "expected_error": true,
+        "expected_suggests_escalation": true
+      }
+    ]
+  },
+  {
+    "id": "budget_06",
+    "description": "Escalation request",
+    "kam_name": "Ana Torres",
+    "steps": [
+      {
+        "input": "Submit an escalation request for $15000 on R0119 because it's our top restaurant and we need a major campaign",
+        "expected_escalation_created": true
+      }
+    ]
+  },
+  {
+    "id": "budget_07",
+    "description": "ROI query with no interventions",
+    "kam_name": "Ana Torres",
+    "steps": [
+      {
+        "input": "What's my intervention ROI?",
+        "expected_roi_response": true
+      }
+    ]
+  },
+  {
+    "id": "budget_08",
+    "description": "Intervention history query",
+    "kam_name": "Ana Torres",
+    "steps": [
+      {
+        "input": "Show me my intervention history",
+        "expected_history_response": true
+      }
+    ]
+  },
+  {
+    "id": "budget_09",
+    "description": "Category-specific spend",
+    "kam_name": "Ana Torres",
+    "steps": [
+      {
+        "input": "Log $1000 ops_support for R0104 - tablet replacement",
+        "expected_category": "ops_support"
+      }
+    ]
+  },
+  {
+    "id": "budget_10",
+    "description": "Balance check after multiple categories",
+    "kam_name": "Ana Torres",
+    "steps": [
+      {
+        "input": "Log $2000 promo on R0090",
+        "expected_remaining": 8000.0
+      },
+      {
+        "input": "Log $1500 credit on R0062",
+        "expected_remaining": 6500.0
+      },
+      {
+        "input": "Show me spend by category",
+        "expected_categories": ["promo", "credit"]
+      }
+    ]
+  }
+]

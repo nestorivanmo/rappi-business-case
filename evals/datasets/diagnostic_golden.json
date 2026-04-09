@@ -1,0 +1,155 @@
+[
+  {
+    "id": "diag_01",
+    "description": "Ana Torres weekly briefing",
+    "kam_name": "Ana Torres",
+    "input_message": "Give me my weekly briefing",
+    "expected": {
+      "mentions_rescue_or_triage_first": true,
+      "mentions_velocity_alerts": true,
+      "all_quadrants_correct": true
+    }
+  },
+  {
+    "id": "diag_02",
+    "description": "Portfolio overview for all KAMs",
+    "kam_name": null,
+    "input_message": "Show me the full portfolio overview",
+    "expected": {
+      "total_restaurants": 205,
+      "mentions_all_quadrants": true
+    }
+  },
+  {
+    "id": "diag_03",
+    "description": "Restaurant detail lookup",
+    "kam_name": "Ana Torres",
+    "input_message": "Tell me about Burger Clásico",
+    "expected": {
+      "restaurant_id": "R0104",
+      "mentions_health_score": true,
+      "mentions_quadrant": true,
+      "mentions_signals": true
+    }
+  },
+  {
+    "id": "diag_04",
+    "description": "Velocity alerts query",
+    "kam_name": "Ana Torres",
+    "input_message": "Which restaurants have velocity alerts?",
+    "expected": {
+      "returns_velocity_flagged_only": true,
+      "mentions_escalation_level": true
+    }
+  },
+  {
+    "id": "diag_05",
+    "description": "Revenue at risk",
+    "kam_name": "Ana Torres",
+    "input_message": "How much revenue is at risk?",
+    "expected": {
+      "mentions_rescue_revenue": true,
+      "mentions_triage_revenue": true
+    }
+  },
+  {
+    "id": "diag_06",
+    "description": "City breakdown",
+    "kam_name": null,
+    "input_message": "Show me performance by city",
+    "expected": {
+      "mentions_multiple_cities": true,
+      "includes_revenue_per_city": true
+    }
+  },
+  {
+    "id": "diag_07",
+    "description": "Vertical breakdown",
+    "kam_name": null,
+    "input_message": "How are different verticals performing?",
+    "expected": {
+      "mentions_comida": true,
+      "mentions_farmacia": true
+    }
+  },
+  {
+    "id": "diag_08",
+    "description": "RESCUE restaurants filter",
+    "kam_name": null,
+    "input_message": "Show me all RESCUE restaurants",
+    "expected": {
+      "count": 5,
+      "all_quadrant_rescue": true
+    }
+  },
+  {
+    "id": "diag_09",
+    "description": "Restaurant comparison",
+    "kam_name": "Ana Torres",
+    "input_message": "Compare El Asadero El Portal and Burritos Gourmet",
+    "expected": {
+      "compares_two_restaurants": true,
+      "mentions_health_scores": true
+    }
+  },
+  {
+    "id": "diag_10",
+    "description": "Search by restaurant name",
+    "kam_name": null,
+    "input_message": "Search for Sushi restaurants",
+    "expected": {
+      "returns_results": true,
+      "results_contain_sushi": true
+    }
+  },
+  {
+    "id": "diag_11",
+    "description": "Specific KAM portfolio",
+    "kam_name": "Carlos Mendoza",
+    "input_message": "How is my portfolio doing?",
+    "expected": {
+      "scoped_to_kam": true,
+      "mentions_restaurant_count": true
+    }
+  },
+  {
+    "id": "diag_12",
+    "description": "GROW restaurants with opportunities",
+    "kam_name": "Ana Torres",
+    "input_message": "Show me my best performing restaurants",
+    "expected": {
+      "shows_grow_restaurants": true,
+      "sorted_by_revenue_or_health": true
+    }
+  },
+  {
+    "id": "diag_13",
+    "description": "Synthetic RESCUE restaurant detail",
+    "kam_name": null,
+    "input_message": "Tell me about El Parrillero de Polanco",
+    "expected": {
+      "quadrant": "RESCUE",
+      "health_score_below_60": true,
+      "high_revenue": true
+    }
+  },
+  {
+    "id": "diag_14",
+    "description": "Immediate escalation restaurants",
+    "kam_name": null,
+    "input_message": "Which restaurants need immediate attention?",
+    "expected": {
+      "mentions_immediate_escalation": true
+    }
+  },
+  {
+    "id": "diag_15",
+    "description": "TRIAGE evaluation",
+    "kam_name": "Ana Torres",
+    "input_message": "Show me my TRIAGE restaurants",
+    "expected": {
+      "all_quadrant_triage": true,
+      "sorted_by_health_ascending": true
+    }
+  }
+]

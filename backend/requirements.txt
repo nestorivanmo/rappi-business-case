@@ -1,0 +1,26 @@
+# Core
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+pydantic==2.11.3
+pydantic-settings==2.9.1
+python-multipart==0.0.20
+
+# Data engine
+pandas==2.2.3
+numpy==2.2.5
+
+# LLM providers
+google-genai==1.14.0
+openai==1.78.1
+anthropic==0.52.0
+
+# Observability
+langfuse>=4.0.0
+
+# SSE streaming
+sse-starlette==2.3.3
+
+# Testing
+pytest==8.3.5
+pytest-asyncio==0.26.0
+httpx==0.28.1

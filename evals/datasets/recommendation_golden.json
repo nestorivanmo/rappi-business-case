@@ -1,0 +1,170 @@
+[
+  {
+    "id": "rec_01",
+    "description": "RESCUE recovery plan - severe",
+    "restaurant_id": "R_SYN_001",
+    "quadrant": "RESCUE",
+    "input_message": "What should I do about El Parrillero de Polanco?",
+    "expected": {
+      "strategy_type": "recovery",
+      "mentions_specific_signals": true,
+      "actionable_this_week": true,
+      "no_growth_strategies": true
+    }
+  },
+  {
+    "id": "rec_02",
+    "description": "RESCUE recovery plan - mid severity",
+    "restaurant_id": "R_SYN_002",
+    "quadrant": "RESCUE",
+    "input_message": "How can I save Sushi Premium Chapultepec?",
+    "expected": {
+      "strategy_type": "recovery",
+      "mentions_cancellation_rate": true,
+      "mentions_rating_decline": true
+    }
+  },
+  {
+    "id": "rec_03",
+    "description": "RESCUE borderline case",
+    "restaurant_id": "R_SYN_004",
+    "quadrant": "RESCUE",
+    "input_message": "What's the plan for La Fonda de Santa Fe?",
+    "expected": {
+      "acknowledges_borderline": true,
+      "strategy_type": "recovery"
+    }
+  },
+  {
+    "id": "rec_04",
+    "description": "GROW expansion strategy - top performer",
+    "restaurant_id": "R0119",
+    "quadrant": "GROW",
+    "input_message": "How can I grow Mariscos La Esquina?",
+    "expected": {
+      "strategy_type": "growth",
+      "mentions_ads_or_promos": true,
+      "no_recovery_strategies": true
+    }
+  },
+  {
+    "id": "rec_05",
+    "description": "GROW ads-ready restaurant",
+    "restaurant_id": "R0087",
+    "quadrant": "GROW",
+    "input_message": "What growth strategy for Sushi Fusión 8?",
+    "expected": {
+      "strategy_type": "growth",
+      "mentions_sponsored_placement": true
+    }
+  },
+  {
+    "id": "rec_06",
+    "description": "GROW menu optimization candidate",
+    "restaurant_id": "R0054",
+    "quadrant": "GROW",
+    "input_message": "Recommend a strategy for Burritos Gourmet",
+    "expected": {
+      "strategy_type": "growth",
+      "actionable_this_week": true
+    }
+  },
+  {
+    "id": "rec_07",
+    "description": "TRIAGE - recoverable",
+    "restaurant_id": "R0062",
+    "quadrant": "TRIAGE",
+    "input_message": "Should I invest in recovering Tortas La Abuela?",
+    "expected": {
+      "evaluates_recovery_roi": true,
+      "mentions_specific_problems": true
+    }
+  },
+  {
+    "id": "rec_08",
+    "description": "TRIAGE - likely disengage",
+    "restaurant_id": "R0104",
+    "quadrant": "TRIAGE",
+    "input_message": "What should I do about Burger Clásico?",
+    "expected": {
+      "considers_disengagement": true,
+      "mentions_low_revenue": true
+    }
+  },
+  {
+    "id": "rec_09",
+    "description": "TRIAGE - borderline",
+    "restaurant_id": "R0074",
+    "quadrant": "TRIAGE",
+    "input_message": "Is Tortas Gourmet worth saving?",
+    "expected": {
+      "evaluates_recovery_roi": true
+    }
+  },
+  {
+    "id": "rec_10",
+    "description": "NURTURE scaling strategy - high potential",
+    "restaurant_id": "R0090",
+    "quadrant": "NURTURE",
+    "input_message": "How can I help Café Artesanal grow?",
+    "expected": {
+      "strategy_type": "nurture",
+      "mentions_volume_building": true
+    }
+  },
+  {
+    "id": "rec_11",
+    "description": "NURTURE moderate potential",
+    "restaurant_id": "R0103",
+    "quadrant": "NURTURE",
+    "input_message": "What strategy for La Cocina de El Rey 7?",
+    "expected": {
+      "strategy_type": "nurture",
+      "actionable_this_week": true
+    }
+  },
+  {
+    "id": "rec_12",
+    "description": "NURTURE limited scale",
+    "restaurant_id": "R0005",
+    "quadrant": "NURTURE",
+    "input_message": "Recommend actions for El Asadero El Portal",
+    "expected": {
+      "strategy_type": "nurture_or_triage"
+    }
+  },
+  {
+    "id": "rec_13",
+    "description": "Velocity override - GROW deteriorating",
+    "restaurant_id": "R_SYN_003",
+    "quadrant": "RESCUE",
+    "input_message": "Carnitas Don Pedro Reforma is declining - what should I do?",
+    "expected": {
+      "acknowledges_velocity": true,
+      "urgent_time_horizon": true,
+      "strategy_type": "recovery"
+    }
+  },
+  {
+    "id": "rec_14",
+    "description": "Velocity override - both signals",
+    "restaurant_id": "R0062",
+    "quadrant": "TRIAGE",
+    "input_message": "Tortas La Abuela has both velocity signals firing - urgent help needed",
+    "expected": {
+      "acknowledges_both_signals": true,
+      "immediate_action": true
+    }
+  },
+  {
+    "id": "rec_15",
+    "description": "Velocity override - single signal",
+    "restaurant_id": "R0115",
+    "quadrant": "NURTURE",
+    "input_message": "El Fogón Premium's rating is dropping - what can I do?",
+    "expected": {
+      "acknowledges_rating_decline": true,
+      "five_day_horizon": true
+    }
+  }
+]
