@@ -10,7 +10,7 @@ class Settings(BaseSettings):
 
     # LLM defaults
     llm_provider: str = "gemini"
-    llm_model: str = "gemini-2.0-flash"
+    llm_model: str = "gemini-2.5-flash"
 
     # Per-agent overrides (optional)
     diagnostic_agent_provider: str | None = None
