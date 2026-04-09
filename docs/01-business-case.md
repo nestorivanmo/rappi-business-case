@@ -44,11 +44,11 @@ The agent's purpose is to **break this chain at step 2** — detecting the opera
 
 This isn't hypothetical. A snapshot of 200 restaurant partners shows that **43.5% of the portfolio is already at risk or critical** — and without a proactive system, these restaurants sit in KAM blind spots until the damage is irreversible.
 
-![Risk Traffic Light Distribution](plots/risk-traffic.png)
+![Risk Traffic Light Distribution](../data-exploration/plots/risk-traffic.png)
 
 The scatter below maps every restaurant by cancellation rate vs. rating, with bubble size representing weekly order volume. The pattern is clear: as cancellations climb, ratings collapse and order volume shrinks — the compounding failure loop described above, already playing out across the portfolio. The orange "at-risk" cluster is where early intervention has the highest leverage; without detection, these restaurants drift silently into critical territory.
 
-![Rating vs Cancellation Rate](plots/rating-vs-cancellations.png)
+![Rating vs Cancellation Rate](../data-exploration/plots/rating-vs-cancellations.png)
 
 ---
 
@@ -60,7 +60,7 @@ The dataset contains 11 numeric variables. Many are highly correlated (e.g., `ra
 
 To identify which variables measure the same thing and which capture distinct risk dimensions, we ran hierarchical clustering on the correlation distance matrix (1 − |r|) using complete linkage. The resulting dendrogram was cut at threshold = 0.15, producing 7 clusters:
 
-![Variable Clustering Dendrogram](plots/dendrogram.png)
+![Variable Clustering Dendrogram](../data-exploration/plots/dendrogram.png)
 
 | Cluster | Variables | Interpretation |
 |---------|-----------|----------------|

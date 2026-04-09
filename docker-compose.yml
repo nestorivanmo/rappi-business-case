@@ -7,7 +7,7 @@ services:
       - .env
     volumes:
       - ./backend:/app
-      - ./1-data-exploration/dataset.csv:/app/data/dataset.csv:ro
+      - ./data-exploration/dataset.csv:/app/data/dataset.csv:ro
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]

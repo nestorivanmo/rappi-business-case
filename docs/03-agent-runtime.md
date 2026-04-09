@@ -1,6 +1,6 @@
 # Agent runtime guide
 
-A code-level walkthrough of how the multi-agent system actually works at runtime. Read [`3-technical-implementation.md`](./3-technical-implementation.md) first for the architecture and design rationale — this document covers how the moving parts fit together in code, what happens on a request, and how to extend or debug the system.
+A code-level walkthrough of how the multi-agent system actually works at runtime. Read [`02-technical-implementation.md`](./02-technical-implementation.md) first for the architecture and design rationale — this document covers how the moving parts fit together in code, what happens on a request, and how to extend or debug the system.
 
 **Audience:** engineers maintaining or extending the agent.
 
@@ -45,7 +45,7 @@ backend/app/
 │
 ├── engine/                      Diagnostic engine (pandas, deterministic)
 │   ├── loader.py                CSV → DataFrame, applies scoring + classification at load
-│   ├── scoring.py               6-signal Health Score formula (see 2-business-case.md)
+│   ├── scoring.py               6-signal Health Score formula (see docs/01-business-case.md)
 │   ├── classification.py        Pareto split + GROW/RESCUE/NURTURE/TRIAGE assignment
 │   ├── velocity.py              Velocity override rules
 │   └── queries.py               All read functions exposed as tools
@@ -373,6 +373,6 @@ LangFuse generation observations capture both. If you need more (e.g., the full 
 
 ## See also
 
-- [`2-business-case.md`](./2-business-case.md) — the scoring model and quadrant definitions the engine implements
-- [`3-technical-implementation.md`](./3-technical-implementation.md) — architecture, design rationale, and the eval framework
+- [`01-business-case.md`](./01-business-case.md) — the scoring model and quadrant definitions the engine implements
+- [`02-technical-implementation.md`](./02-technical-implementation.md) — architecture, design rationale, and the eval framework
 - `backend/app/agents/base.py` — the only file you really need to read to understand the runtime

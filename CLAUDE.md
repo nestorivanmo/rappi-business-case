@@ -8,9 +8,11 @@ Proactive Risk Detection Agent for Rappi KAMs (Rappi AI Builder Challenge — Ca
 
 ## Repo structure
 
-- `1-data-exploration/` — Dataset (205 restaurants), Jupyter notebook, plot assets
-- `2-business-case.md` — Ecosystem analysis, scoring logic, quadrant classification
-- `3-technical-implementation.md` — Architecture spec: multi-agent design, provider abstraction, eval framework
+- `data-exploration/` — Dataset (205 restaurants), Jupyter notebook, plot assets
+- `docs/01-business-case.md` — Ecosystem analysis, scoring logic, quadrant classification
+- `docs/02-technical-implementation.md` — Architecture spec: multi-agent design, provider abstraction, eval framework
+- `docs/03-agent-runtime.md` — Code-level runtime walkthrough of the multi-agent system
+- `docs/challenge.pdf` — Original Rappi AI Builder Challenge brief
 - `backend/` — Python FastAPI backend (diagnostic engine, agents, LLM abstraction, budget management)
 - `frontend/` — Next.js 14 dashboard with chat panel
 - `evals/` — Evaluation framework (golden datasets, scorers)
@@ -78,7 +80,7 @@ python evals/run_evals.py --all
 - API keys via `.env` file (see `.env.example`); `Settings` reads both `.env` and `../.env`
 - Backend dependencies in `backend/requirements.txt`
 - **Per-agent LLM overrides** via `{diagnostic,rgm,budget}_agent_{provider,model}` env vars; otherwise all agents share `llm_provider` / `llm_model`
-- **Data loading quirk:** the canonical dataset lives at `1-data-exploration/dataset.csv`. Docker mounts it read-only into `backend/data/dataset.csv` (see `docker-compose.yml`). When running the backend outside Docker, ensure `backend/data/dataset.csv` exists or set `data_path` accordingly.
+- **Data loading quirk:** the canonical dataset lives at `data-exploration/dataset.csv`. Docker mounts it read-only into `backend/data/dataset.csv` (see `docker-compose.yml`). When running the backend outside Docker, ensure `backend/data/dataset.csv` exists or set `data_path` accordingly.
 
 ## Frontend caveat
 

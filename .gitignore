@@ -211,8 +211,10 @@ __marimo__/
 
 # Frontend
 frontend/node_modules/
-frontend/.next/
+.next/
 frontend/.env.local
+frontend/.vercel/
+frontend/tsconfig.tsbuildinfo
 
 # Backend runtime
 backend/data/interventions.csv
