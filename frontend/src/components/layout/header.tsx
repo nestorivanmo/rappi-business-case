@@ -15,7 +15,7 @@ export function Header() {
   const { currentKam, setKam } = useKamSelector();
 
   return (
-    <header className="bg-white px-6 py-4 flex items-center justify-between">
+    <header className="bg-white px-4 py-3 sm:px-6 sm:py-4 flex items-center justify-between">
       <Image
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Rappi_logo.svg/1280px-Rappi_logo.svg.png"
         alt="Rappi"

@@ -13,7 +13,7 @@ function DashboardContent() {
 
 export default function DashboardPage() {
   return (
-    <div className="h-screen bg-white flex flex-col">
+    <div className="h-[100dvh] bg-white flex flex-col">
       <Suspense>
         <Header />
         <DashboardContent />

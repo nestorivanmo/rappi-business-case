@@ -60,12 +60,12 @@ export function DescriptivePanel({ restaurants, totalRevenue, isLoading, onPrefi
   const deltaPositive = stats.avgDelta >= 0;
 
   return (
-    <div className="space-y-8">
+    <div className="flex flex-col gap-12">
       {/* Date range */}
       <button
         type="button"
         onClick={() => onPrefill?.("Walk me through what changed in my portfolio during the week of Apr 7, 2026 — wins, losses, and what needs attention.")}
-        className="block w-full text-left rounded-md p-2 -m-2 cursor-pointer hover:bg-gray-50 transition-colors"
+        className="block w-full text-left rounded-md px-2 -mx-2 cursor-pointer hover:bg-gray-50 transition-colors"
       >
         <span className="block text-xs font-medium text-muted-foreground uppercase tracking-wide">Data period</span>
         <span className="block text-base text-foreground mt-1">Week of Apr 7, 2026</span>

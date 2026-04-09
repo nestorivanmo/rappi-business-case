@@ -111,18 +111,18 @@ export function AnalyticalPanel({ overview, isLoading, compact = false, onPrefil
 
   const dist = overview.quadrant_distribution;
 
-  const cardPadding = compact ? "p-3" : "p-5";
-  const gmvValueSize = compact ? "text-2xl" : "text-4xl";
+  const cardPadding = compact ? "p-3" : "p-4 lg:p-5";
+  const gmvValueSize = compact ? "text-2xl" : "text-3xl lg:text-4xl";
   const gmvPctSize = compact ? "text-sm" : "text-base";
-  const quadrantNumberSize = compact ? "text-2xl" : "text-4xl";
+  const quadrantNumberSize = compact ? "text-2xl" : "text-3xl lg:text-4xl";
   const quadrantLabelSize = compact ? "text-xs" : "text-sm";
 
   const gmvPrompt = `Let's discuss the ${formatCurrency(overview.revenue_at_risk)} of GMV at stake — which restaurants are driving it and what should I do this week to protect it?`;
   const fireGmvPrefill = () => onPrefill?.(gmvPrompt);
 
   return (
-    <div className="grid grid-cols-6 gap-3">
-      {/* GMV at stake — spans 2 columns */}
+    <div className="grid grid-cols-2 lg:grid-cols-6 gap-3">
+      {/* GMV at stake — full width on mobile, spans 2 cols on desktop */}
       <div
         role="button"
         tabIndex={0}

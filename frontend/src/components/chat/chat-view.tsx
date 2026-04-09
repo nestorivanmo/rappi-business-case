@@ -56,33 +56,33 @@ export function ChatView({ kam }: { kam: string }) {
   };
 
   return (
-    <div className="flex-1 flex min-h-0">
-      {/* Left 1/4 — Descriptive data */}
-      <div className="w-1/4 bg-white px-8 pt-8 overflow-y-auto [scrollbar-width:thin] [scrollbar-color:theme(colors.gray.300)_transparent] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-gray-400">
-        <h1 className="text-5xl font-bold text-foreground">
+    <div className="flex-1 flex flex-col lg:flex-row min-h-0 overflow-y-auto lg:overflow-hidden">
+      {/* Left sidebar — Descriptive data (full width on mobile, 1/4 on desktop) */}
+      <div className="w-full lg:w-1/4 bg-white px-4 pt-4 sm:px-6 sm:pt-6 lg:px-8 lg:pt-8 lg:overflow-y-auto [scrollbar-width:thin] [scrollbar-color:theme(colors.gray.300)_transparent] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-gray-400">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
           Hello, <span className="text-rappi">{firstName}</span>
         </h1>
-        <p className="mt-2 text-lg italic text-gray-400">
+        <p className="mt-2 text-base sm:text-lg italic text-gray-400">
           Here are the latest data insights...
         </p>
-        <div className="mt-8">
+        <div className="mt-6 lg:mt-8">
           <DescriptivePanel restaurants={restaurants} totalRevenue={overview?.total_revenue} isLoading={isLoading} onPrefill={handlePrefill} />
         </div>
       </div>
 
-      {/* Center 3/4 — Analytics + Chat + New section */}
-      <div className="w-3/4 min-w-0 flex flex-col pt-8 min-h-0">
+      {/* Center — Analytics + Chat + Actions (full width on mobile, 3/4 on desktop) */}
+      <div className="w-full lg:w-3/4 min-w-0 flex flex-col pt-6 lg:pt-8 lg:min-h-0">
         {/* Analytical summary — spans full width */}
-        <div className="w-full px-10">
-          <div className="mb-[6vh]">
+        <div className="w-full px-4 sm:px-6 lg:px-10">
+          <div className="mb-6 lg:mb-[6vh]">
             <AnalyticalPanel overview={overview} isLoading={isLoading} onPrefill={handlePrefill} />
           </div>
         </div>
 
-        {/* Below analytics: chat area (2/3) | new section (1/3) */}
-        <div className="flex flex-1 min-h-0">
-          {/* Chat area — 2/3 */}
-          <div className="flex-[2] min-w-0 px-10 flex flex-col min-h-0">
+        {/* Below analytics: chat area + actions (stacked on mobile, row on desktop) */}
+        <div className="flex flex-col lg:flex-row lg:flex-1 lg:min-h-0">
+          {/* Chat area — 2/3 on desktop */}
+          <div className="w-full lg:flex-[2] min-w-0 px-4 sm:px-6 lg:px-10 flex flex-col lg:min-h-0">
             <form onSubmit={handleSubmit} className="flex items-end gap-3 border-b-2 border-rappi pb-2">
               <textarea
                 ref={textareaRef}
@@ -94,7 +94,7 @@ export function ChatView({ kam }: { kam: string }) {
                 onFocus={() => setFocused(true)}
                 onBlur={() => setFocused(false)}
                 disabled={isStreaming}
-                className="flex-1 bg-transparent text-xl text-gray-400 text-left outline-none resize-none placeholder:text-gray-400 placeholder:italic disabled:opacity-50"
+                className="flex-1 bg-transparent text-base sm:text-lg lg:text-xl text-gray-400 text-left outline-none resize-none placeholder:text-gray-400 placeholder:italic disabled:opacity-50"
               />
               <button
                 type="submit"
@@ -129,7 +129,7 @@ export function ChatView({ kam }: { kam: string }) {
 
             {/* Messages area */}
             {hasMessages && (
-              <div className="flex-1 min-h-0 overflow-hidden mt-4">
+              <div className="h-[55vh] lg:h-auto lg:flex-1 lg:min-h-0 overflow-hidden mt-4">
                 <MessageList messages={messages} />
               </div>
             )}
@@ -157,10 +157,10 @@ export function ChatView({ kam }: { kam: string }) {
             )}
           </div>
 
-          {/* Actions — 1/3, with vertical divider */}
-          <div className="flex-1 min-w-0 border-l border-gray-200 px-10 flex flex-col min-h-0">
-            <h2 className="text-2xl font-bold text-foreground shrink-0">Actions</h2>
-            <div className="flex-1 overflow-y-auto mt-4 space-y-3 pb-4">
+          {/* Actions — stacked below chat on mobile, 1/3 sidebar on desktop */}
+          <div className="w-full lg:flex-1 min-w-0 border-t lg:border-t-0 lg:border-l border-gray-200 px-4 sm:px-6 lg:px-10 pt-6 lg:pt-0 pb-4 lg:pb-0 mt-4 lg:mt-0 flex flex-col lg:min-h-0">
+            <h2 className="text-xl sm:text-2xl font-bold text-foreground shrink-0">Actions</h2>
+            <div className="lg:flex-1 lg:overflow-y-auto mt-4 space-y-3 lg:pb-4">
               {actions.length === 0 ? (
                 <p className="text-sm text-muted-foreground italic">
                   Your saved actions will appear here.
