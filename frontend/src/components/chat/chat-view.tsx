@@ -1,10 +1,12 @@
 "use client";
 
 import { useState, useRef, useEffect, type FormEvent, type KeyboardEvent } from "react";
+import { Plus, Loader2 } from "lucide-react";
 import { useChat } from "@/hooks/use-chat";
 import { useDashboard } from "@/hooks/use-dashboard";
+import { useActions } from "@/hooks/use-actions";
 import { MessageList } from "./message-list";
-import { ContextBar } from "@/components/dashboard/context-bar";
+import { ActionCard } from "./action-card";
 import { DescriptivePanel } from "@/components/dashboard/descriptive-panel";
 import { AnalyticalPanel } from "@/components/dashboard/analytical-panel";
 import { SuggestedQuestions } from "./suggested-questions";
@@ -12,6 +14,7 @@ import { SuggestedQuestions } from "./suggested-questions";
 export function ChatView({ kam }: { kam: string }) {
   const { messages, sendMessage, isStreaming, clearMessages } = useChat(kam);
   const { overview, restaurants, isLoading } = useDashboard(kam);
+  const { actions, createAction, removeAction, isCreating, error: actionsError } = useActions(kam);
   const [value, setValue] = useState("");
   const [focused, setFocused] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -41,6 +44,12 @@ export function ChatView({ kam }: { kam: string }) {
     }
   };
 
+  const handleAddToAction = async () => {
+    if (!hasMessages || isStreaming || isCreating) return;
+    const ok = await createAction(messages);
+    if (ok) clearMessages();
+  };
+
   return (
     <div className="flex-1 flex min-h-0">
       {/* Left 1/4 — Descriptive data */}
@@ -57,11 +66,11 @@ export function ChatView({ kam }: { kam: string }) {
       </div>
 
       {/* Center 3/4 — Analytics + Chat + New section */}
-      <div className={`w-3/4 min-w-0 flex flex-col min-h-0 transition-all ${hasMessages ? "pt-4" : "pt-8"}`}>
+      <div className="w-3/4 min-w-0 flex flex-col pt-8 min-h-0">
         {/* Analytical summary — spans full width */}
         <div className="w-full px-10">
-          <div className={`transition-all ${hasMessages ? "mb-2" : "mb-[6vh]"}`}>
-            <AnalyticalPanel overview={overview} isLoading={isLoading} compact={hasMessages} />
+          <div className="mb-[6vh]">
+            <AnalyticalPanel overview={overview} isLoading={isLoading} />
           </div>
         </div>
 
@@ -119,11 +128,48 @@ export function ChatView({ kam }: { kam: string }) {
                 <MessageList messages={messages} />
               </div>
             )}
+
+            {/* Add to Action button — bottom of chat column, only when messages exist */}
+            {hasMessages && (
+              <div className="shrink-0 pt-3 pb-4 flex flex-col items-center gap-2">
+                {actionsError && (
+                  <p className="text-xs text-red-500">{actionsError}</p>
+                )}
+                <button
+                  type="button"
+                  onClick={handleAddToAction}
+                  disabled={isStreaming || isCreating}
+                  className="bg-rappi text-white text-sm font-medium px-5 py-2.5 rounded-full hover:opacity-90 disabled:opacity-40 transition-opacity flex items-center gap-2"
+                >
+                  {isCreating ? (
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                  ) : (
+                    <Plus className="w-4 h-4" />
+                  )}
+                  {isCreating ? "Summarizing..." : "Add to Action"}
+                </button>
+              </div>
+            )}
           </div>
 
           {/* Actions — 1/3, with vertical divider */}
-          <div className="flex-1 min-w-0 border-l border-gray-200 px-10">
-            <h2 className="text-2xl font-bold text-foreground">Actions</h2>
+          <div className="flex-1 min-w-0 border-l border-gray-200 px-10 flex flex-col min-h-0">
+            <h2 className="text-2xl font-bold text-foreground shrink-0">Actions</h2>
+            <div className="flex-1 overflow-y-auto mt-4 space-y-3 pb-4">
+              {actions.length === 0 ? (
+                <p className="text-sm text-muted-foreground italic">
+                  Your saved actions will appear here.
+                </p>
+              ) : (
+                actions.map((action) => (
+                  <ActionCard
+                    key={action.id}
+                    action={action}
+                    onRemove={removeAction}
+                  />
+                ))
+              )}
+            </div>
           </div>
         </div>
       </div>

@@ -58,7 +58,7 @@ class BaseAgent:
             return
         input_msgs = [{"role": m.role, "content": m.content[:200] if m.content else None} for m in messages[-5:]]
         gen = parent_span.start_observation(
-            name=f"llm_call_{iteration}",
+            name=f"{self.name}.llm_call_{iteration}",
             as_type="generation",
             model=getattr(self.provider, "model", None),
             input=input_msgs,

@@ -4,6 +4,7 @@ import type {
   RestaurantDetail,
   BudgetBalance,
   ChatMessage,
+  SummarizeResponse,
 } from "./types";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -87,4 +88,17 @@ export async function* streamChat(
       }
     }
   }
+}
+
+export async function summarizeChat(
+  kam: string,
+  messages: ChatMessage[]
+): Promise<SummarizeResponse> {
+  const res = await fetch(`${API_URL}/api/chat/summarize`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ kam, messages }),
+  });
+  if (!res.ok) throw new Error(`Summarize API error: ${res.status}`);
+  return res.json();
 }

@@ -30,14 +30,14 @@ export function SuggestedQuestions({ onSelect }: SuggestedQuestionsProps) {
     <div
       ref={scrollRef}
       onWheel={handleWheel}
-      className="overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      className="w-full min-w-0 max-w-full overflow-x-auto py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
     >
       <div className="flex gap-2 w-max">
         {QUESTIONS.map((q) => (
           <button
             key={q}
             onClick={() => onSelect(q)}
-            className="shrink-0 border border-border bg-background rounded-lg px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground cursor-pointer transition-colors"
+            className="shrink-0 whitespace-nowrap border border-border bg-background rounded-lg px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground cursor-pointer transition-colors"
           >
             {q}
           </button>

@@ -15,8 +15,6 @@ type Direction = "up" | "down";
 interface QuadrantMeta {
   label: string;
   tooltip: string;
-  bg: string;
-  text: string;
   number: string;
   health: Direction;
   value: Direction;
@@ -26,36 +24,28 @@ const QUADRANT_META: Record<string, QuadrantMeta> = {
   GROW: {
     label: "Grow",
     tooltip: "High health, high value — protect and expand. These are the portfolio's revenue engine.",
-    bg: "bg-green-50",
-    text: "text-green-700",
-    number: "text-green-600",
+    number: "text-gray-800",
     health: "up",
     value: "up",
   },
   RESCUE: {
     label: "Rescue",
     tooltip: "Low health, high value — stop the bleeding. High revenue at stake, deteriorating health. Act today.",
-    bg: "bg-red-50",
-    text: "text-red-700",
-    number: "text-red-600",
+    number: "text-gray-800",
     health: "down",
     value: "up",
   },
   NURTURE: {
     label: "Nurture",
     tooltip: "High health, low value — stable but small. Help them scale into high-value territory.",
-    bg: "bg-blue-50",
-    text: "text-blue-700",
-    number: "text-blue-600",
+    number: "text-gray-800",
     health: "up",
     value: "down",
   },
   TRIAGE: {
     label: "Triage",
     tooltip: "Low health, low value — evaluate whether recovery is worth the investment.",
-    bg: "bg-gray-100",
-    text: "text-gray-700",
-    number: "text-gray-600",
+    number: "text-gray-800",
     health: "down",
     value: "down",
   },
@@ -150,16 +140,16 @@ export function AnalyticalPanel({ overview, isLoading, compact = false }: Analyt
       {(["GROW", "RESCUE", "NURTURE", "TRIAGE"] as const).map((q) => {
         const meta = QUADRANT_META[q];
         return (
-          <div key={q} className={`relative rounded-2xl ${meta.bg} ${cardPadding} flex flex-col items-center justify-center`}>
+          <div key={q} className={`relative rounded-2xl bg-gray-50 ${cardPadding} flex flex-col items-center justify-center`}>
             <p className={`${quadrantNumberSize} font-bold ${meta.number}`}>{dist[q]}</p>
             <div className="flex items-center gap-1.5 mt-1">
-              <span className={`${quadrantLabelSize} font-medium ${meta.text}`}>{meta.label}</span>
+              <span className={`${quadrantLabelSize} font-medium text-muted-foreground`}>{meta.label}</span>
               <button
                 type="button"
                 onMouseEnter={() => setActiveQuadrantTooltip(q)}
                 onMouseLeave={() => setActiveQuadrantTooltip(null)}
                 onClick={() => setActiveQuadrantTooltip((v) => v === q ? null : q)}
-                className={`${meta.text} opacity-50 hover:opacity-100 transition-opacity`}
+                className="text-muted-foreground/50 hover:text-muted-foreground transition-colors"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10" />
@@ -168,7 +158,7 @@ export function AnalyticalPanel({ overview, isLoading, compact = false }: Analyt
                 </svg>
               </button>
             </div>
-            <div className={`flex items-center gap-1.5 mt-1 text-[11px] font-medium ${meta.text}`}>
+            <div className="flex items-center gap-1.5 mt-1 text-[11px] font-medium text-muted-foreground">
               <span className="flex items-center gap-0.5">
                 <DirectionArrow direction={meta.health} />
                 Health

@@ -60,4 +60,17 @@ export interface ChatMessage {
   content: string;
 }
 
+export interface Action {
+  id: string;
+  title: string;
+  summary: string;
+  createdAt: string;
+  messageCount: number;
+}
+
+export interface SummarizeResponse {
+  title: string;
+  summary: string;
+}
+
 export type Quadrant = "GROW" | "RESCUE" | "NURTURE" | "TRIAGE";

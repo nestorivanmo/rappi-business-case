@@ -1,6 +1,8 @@
 import json
+import os
+import re
 
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel
 from sse_starlette.sse import EventSourceResponse
 
@@ -15,6 +17,24 @@ class ChatMessage(BaseModel):
 class ChatRequest(BaseModel):
     kam: str
     messages: list[ChatMessage]
+
+
+class SummarizeRequest(BaseModel):
+    kam: str
+    messages: list[ChatMessage]
+
+
+class SummarizeResponse(BaseModel):
+    title: str
+    summary: str
+
+
+def _load_summarize_prompt() -> str:
+    path = os.path.join(
+        os.path.dirname(__file__), "..", "agents", "prompts", "summarize.txt"
+    )
+    with open(path) as f:
+        return f.read()
 
 
 @router.post("/chat")
@@ -35,3 +55,43 @@ async def chat(request: Request, body: ChatRequest):
         yield {"event": "done", "data": ""}
 
     return EventSourceResponse(event_generator())
+
+
+@router.post("/chat/summarize", response_model=SummarizeResponse)
+async def summarize_chat(request: Request, body: SummarizeRequest) -> SummarizeResponse:
+    if not body.messages:
+        raise HTTPException(status_code=400, detail="messages must not be empty")
+
+    settings = request.app.state.settings
+
+    from app.llm.factory import get_agent_provider
+    from app.llm.types import Message
+
+    transcript = "\n\n".join(f"{m.role.upper()}: {m.content}" for m in body.messages)
+
+    provider = get_agent_provider("llm", settings)
+    prompt = _load_summarize_prompt()
+
+    response = await provider.chat(
+        messages=[Message(role="user", content=f"Conversation:\n\n{transcript}")],
+        system_prompt=prompt,
+        tools=None,
+        temperature=0.2,
+    )
+
+    raw = (response.content or "").strip()
+    # Strip any ```json fences the model may emit despite instructions
+    raw = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw, flags=re.MULTILINE).strip()
+
+    try:
+        parsed = json.loads(raw)
+        return SummarizeResponse(
+            title=str(parsed["title"])[:80],
+            summary=str(parsed["summary"]),
+        )
+    except (json.JSONDecodeError, KeyError, TypeError):
+        # Defensive fallback so the UI never crashes
+        return SummarizeResponse(
+            title="Conversation summary",
+            summary=raw[:240] or "No summary available.",
+        )
