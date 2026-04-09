@@ -25,11 +25,15 @@ export function useChat(kam: string) {
           ]);
         }
       } catch (error) {
+        const detail =
+          error instanceof Error && error.message
+            ? error.message
+            : "unknown error";
         setMessages([
           ...updatedMessages,
           {
             role: "assistant",
-            content: "Error connecting to the agent. Please try again.",
+            content: `The agent hit an error and could not finish: ${detail}. Please try again.`,
           },
         ]);
       } finally {

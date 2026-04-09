@@ -76,16 +76,17 @@ export async function* streamChat(
     buffer = lines.pop() || "";
 
     for (const line of lines) {
-      if (line.startsWith("data: ")) {
-        const data = line.slice(6);
-        if (!data) continue;
-        try {
-          const parsed = JSON.parse(data);
-          if (parsed.content) yield parsed.content;
-        } catch {
-          // Skip malformed JSON
-        }
+      if (!line.startsWith("data: ")) continue;
+      const data = line.slice(6);
+      if (!data) continue;
+      let parsed: { content?: string; error?: string };
+      try {
+        parsed = JSON.parse(data);
+      } catch {
+        continue; // skip malformed JSON
       }
+      if (parsed.error) throw new Error(parsed.error);
+      if (parsed.content) yield parsed.content;
     }
   }
 }

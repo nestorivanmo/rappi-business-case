@@ -50,8 +50,14 @@ async def chat(request: Request, body: ChatRequest):
     router_agent = RouterAgent(settings, engine, budget_manager, body.kam)
 
     async def event_generator():
-        async for chunk in router_agent.chat_stream(messages):
-            yield {"event": "message", "data": json.dumps({"content": chunk})}
+        try:
+            async for chunk in router_agent.chat_stream(messages):
+                yield {"event": "message", "data": json.dumps({"content": chunk})}
+        except Exception as exc:  # noqa: BLE001
+            # Surface agent/LLM failures as a structured SSE payload so the
+            # client stops waiting instead of hanging on a half-open stream.
+            message = str(exc) or exc.__class__.__name__
+            yield {"event": "message", "data": json.dumps({"error": message})}
         yield {"event": "done", "data": ""}
 
     return EventSourceResponse(event_generator())
