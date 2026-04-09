@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type KeyboardEvent } from "react";
 import type { PortfolioOverview } from "@/lib/types";
 import { formatCurrency } from "@/lib/constants";
 
@@ -8,6 +8,16 @@ interface AnalyticalPanelProps {
   overview?: PortfolioOverview;
   isLoading?: boolean;
   compact?: boolean;
+  onPrefill?: (prompt: string) => void;
+}
+
+function handleCardKeyDown(action: () => void) {
+  return (e: KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      action();
+    }
+  };
 }
 
 type Direction = "up" | "down";
@@ -19,6 +29,13 @@ interface QuadrantMeta {
   health: Direction;
   value: Direction;
 }
+
+const QUADRANT_PROMPT: Record<"GROW" | "RESCUE" | "NURTURE" | "TRIAGE", (count: number) => string> = {
+  GROW: (count) => `I have ${count} restaurants in Grow. How do I protect them and push them further, and which ones are at the edge of slipping?`,
+  RESCUE: (count) => `I have ${count} restaurants in Rescue. Which ones should I act on first, and what interventions are most likely to work?`,
+  NURTURE: (count) => `I have ${count} restaurants in Nurture. Which ones have the clearest path to becoming Grow accounts?`,
+  TRIAGE: (count) => `I have ${count} restaurants in Triage. Help me decide which are worth saving and which I should de-prioritize.`,
+};
 
 const QUADRANT_META: Record<string, QuadrantMeta> = {
   GROW: {
@@ -79,7 +96,7 @@ function DirectionArrow({ direction }: { direction: Direction }) {
   );
 }
 
-export function AnalyticalPanel({ overview, isLoading, compact = false }: AnalyticalPanelProps) {
+export function AnalyticalPanel({ overview, isLoading, compact = false, onPrefill }: AnalyticalPanelProps) {
   const [showGmvTooltip, setShowGmvTooltip] = useState(false);
   const [activeQuadrantTooltip, setActiveQuadrantTooltip] = useState<string | null>(null);
 
@@ -100,17 +117,27 @@ export function AnalyticalPanel({ overview, isLoading, compact = false }: Analyt
   const quadrantNumberSize = compact ? "text-2xl" : "text-4xl";
   const quadrantLabelSize = compact ? "text-xs" : "text-sm";
 
+  const gmvPrompt = `Let's discuss the ${formatCurrency(overview.revenue_at_risk)} of GMV at stake — which restaurants are driving it and what should I do this week to protect it?`;
+  const fireGmvPrefill = () => onPrefill?.(gmvPrompt);
+
   return (
     <div className="grid grid-cols-6 gap-3">
       {/* GMV at stake — spans 2 columns */}
-      <div className={`relative col-span-2 rounded-2xl bg-gray-50 ${cardPadding}`}>
+      <div
+        role="button"
+        tabIndex={0}
+        onClick={fireGmvPrefill}
+        onKeyDown={handleCardKeyDown(fireGmvPrefill)}
+        aria-label="Discuss GMV at stake in chat"
+        className={`relative col-span-2 rounded-2xl bg-gray-50 ${cardPadding} cursor-pointer hover:bg-gray-100 transition-colors`}
+      >
         <div className="inline-flex items-center gap-1.5">
           <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">GMV at stake</p>
           <button
             type="button"
             onMouseEnter={() => setShowGmvTooltip(true)}
             onMouseLeave={() => setShowGmvTooltip(false)}
-            onClick={() => setShowGmvTooltip((v) => !v)}
+            onClick={(e) => { e.stopPropagation(); setShowGmvTooltip((v) => !v); }}
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -139,16 +166,27 @@ export function AnalyticalPanel({ overview, isLoading, compact = false }: Analyt
       {/* Health quadrants — 4 individual cards */}
       {(["GROW", "RESCUE", "NURTURE", "TRIAGE"] as const).map((q) => {
         const meta = QUADRANT_META[q];
+        const count = dist[q];
+        const quadrantPrompt = QUADRANT_PROMPT[q](count);
+        const firePrefill = () => onPrefill?.(quadrantPrompt);
         return (
-          <div key={q} className={`relative rounded-2xl bg-gray-50 ${cardPadding} flex flex-col items-center justify-center`}>
-            <p className={`${quadrantNumberSize} font-bold ${meta.number}`}>{dist[q]}</p>
+          <div
+            key={q}
+            role="button"
+            tabIndex={0}
+            onClick={firePrefill}
+            onKeyDown={handleCardKeyDown(firePrefill)}
+            aria-label={`Discuss ${meta.label} restaurants in chat`}
+            className={`relative rounded-2xl bg-gray-50 ${cardPadding} flex flex-col items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors`}
+          >
+            <p className={`${quadrantNumberSize} font-bold ${meta.number}`}>{count}</p>
             <div className="flex items-center gap-1.5 mt-1">
               <span className={`${quadrantLabelSize} font-medium text-muted-foreground`}>{meta.label}</span>
               <button
                 type="button"
                 onMouseEnter={() => setActiveQuadrantTooltip(q)}
                 onMouseLeave={() => setActiveQuadrantTooltip(null)}
-                onClick={() => setActiveQuadrantTooltip((v) => v === q ? null : q)}
+                onClick={(e) => { e.stopPropagation(); setActiveQuadrantTooltip((v) => v === q ? null : q); }}
                 className="text-muted-foreground/50 hover:text-muted-foreground transition-colors"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

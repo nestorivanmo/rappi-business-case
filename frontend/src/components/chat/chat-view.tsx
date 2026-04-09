@@ -50,10 +50,15 @@ export function ChatView({ kam }: { kam: string }) {
     if (ok) clearMessages();
   };
 
+  const handlePrefill = (prompt: string) => {
+    setValue(prompt);
+    textareaRef.current?.focus();
+  };
+
   return (
     <div className="flex-1 flex min-h-0">
       {/* Left 1/4 — Descriptive data */}
-      <div className="w-1/4 bg-white px-8 pt-8 overflow-y-auto">
+      <div className="w-1/4 bg-white px-8 pt-8 overflow-y-auto [scrollbar-width:thin] [scrollbar-color:theme(colors.gray.300)_transparent] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-gray-400">
         <h1 className="text-5xl font-bold text-foreground">
           Hello, <span className="text-rappi">{firstName}</span>
         </h1>
@@ -61,7 +66,7 @@ export function ChatView({ kam }: { kam: string }) {
           Here are the latest data insights...
         </p>
         <div className="mt-8">
-          <DescriptivePanel restaurants={restaurants} totalRevenue={overview?.total_revenue} isLoading={isLoading} />
+          <DescriptivePanel restaurants={restaurants} totalRevenue={overview?.total_revenue} isLoading={isLoading} onPrefill={handlePrefill} />
         </div>
       </div>
 
@@ -70,7 +75,7 @@ export function ChatView({ kam }: { kam: string }) {
         {/* Analytical summary — spans full width */}
         <div className="w-full px-10">
           <div className="mb-[6vh]">
-            <AnalyticalPanel overview={overview} isLoading={isLoading} />
+            <AnalyticalPanel overview={overview} isLoading={isLoading} onPrefill={handlePrefill} />
           </div>
         </div>
 
@@ -85,7 +90,7 @@ export function ChatView({ kam }: { kam: string }) {
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder={focused ? undefined : "What should we tackle next? Ask me anything"}
+                placeholder={!hasMessages && !focused ? "What should we tackle next? Ask me anything" : undefined}
                 onFocus={() => setFocused(true)}
                 onBlur={() => setFocused(false)}
                 disabled={isStreaming}
@@ -118,7 +123,7 @@ export function ChatView({ kam }: { kam: string }) {
             {/* Suggested questions — hide when text is entered or messages exist */}
             {!hasMessages && !value && (
               <div className="pt-4">
-                <SuggestedQuestions onSelect={(q) => { setValue(q); textareaRef.current?.focus(); }} />
+                <SuggestedQuestions onSelect={handlePrefill} />
               </div>
             )}
 

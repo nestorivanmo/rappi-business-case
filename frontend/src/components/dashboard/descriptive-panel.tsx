@@ -8,9 +8,10 @@ interface DescriptivePanelProps {
   restaurants?: RestaurantSummary[];
   totalRevenue?: number;
   isLoading?: boolean;
+  onPrefill?: (prompt: string) => void;
 }
 
-export function DescriptivePanel({ restaurants, totalRevenue, isLoading }: DescriptivePanelProps) {
+export function DescriptivePanel({ restaurants, totalRevenue, isLoading, onPrefill }: DescriptivePanelProps) {
   const stats = useMemo(() => {
     if (!restaurants || restaurants.length === 0) return null;
 
@@ -61,23 +62,37 @@ export function DescriptivePanel({ restaurants, totalRevenue, isLoading }: Descr
   return (
     <div className="space-y-8">
       {/* Date range */}
-      <div>
-        <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">Data period</p>
-        <p className="text-base text-foreground mt-1">Week of Apr 7, 2026</p>
-      </div>
+      <button
+        type="button"
+        onClick={() => onPrefill?.("Walk me through what changed in my portfolio during the week of Apr 7, 2026 — wins, losses, and what needs attention.")}
+        className="block w-full text-left rounded-md p-2 -m-2 cursor-pointer hover:bg-gray-50 transition-colors"
+      >
+        <span className="block text-xs font-medium text-muted-foreground uppercase tracking-wide">Data period</span>
+        <span className="block text-base text-foreground mt-1">Week of Apr 7, 2026</span>
+      </button>
 
       {/* KPI table */}
-      <div className="border border-gray-200 rounded-lg overflow-hidden">
+      <div>
+        <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-4">Portfolio metrics</p>
+        <div className="border border-gray-200 rounded-lg overflow-hidden">
         {/* Row 1: 3 columns */}
         <div className="grid grid-cols-3 divide-x divide-gray-200">
-          <div className="p-3">
-            <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">Accounts</p>
-            <p className="text-2xl font-bold text-foreground mt-1">{stats.totalCount}</p>
-          </div>
-          <div className="p-3">
-            <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">Avg. rating</p>
-            <div className="flex items-baseline gap-1 mt-1">
-              <p className="text-2xl font-bold text-foreground">{stats.avgRating.toFixed(1)}</p>
+          <button
+            type="button"
+            onClick={() => onPrefill?.(`My portfolio has ${stats.totalCount} accounts. How is that book of business shaped, and where should I focus my time this week?`)}
+            className="p-3 text-left cursor-pointer hover:bg-gray-100 transition-colors"
+          >
+            <span className="block text-xs font-medium text-gray-400 uppercase tracking-wide">Accounts</span>
+            <span className="block text-2xl font-bold text-foreground mt-1">{stats.totalCount}</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => onPrefill?.(`My portfolio's average rating is ${stats.avgRating.toFixed(1)} (${deltaPositive ? "up" : "down"} ${Math.abs(stats.avgDelta).toFixed(2)} WoW). Which restaurants are pulling this number, and what should I do about it?`)}
+            className="p-3 text-left cursor-pointer hover:bg-gray-100 transition-colors"
+          >
+            <span className="block text-xs font-medium text-gray-400 uppercase tracking-wide">Avg. rating</span>
+            <span className="flex items-baseline gap-1 mt-1">
+              <span className="text-2xl font-bold text-foreground">{stats.avgRating.toFixed(1)}</span>
               <span className={`flex items-center text-xs font-semibold ${deltaPositive ? "text-green-600" : "text-red-500"}`}>
                 {deltaPositive ? (
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m18 15-6-6-6 6"/></svg>
@@ -86,33 +101,50 @@ export function DescriptivePanel({ restaurants, totalRevenue, isLoading }: Descr
                 )}
                 {Math.abs(stats.avgDelta).toFixed(2)}
               </span>
-            </div>
-          </div>
-          <div className="p-3">
-            <p className={`text-xs font-medium text-gray-400 uppercase tracking-wide`}>Avg. delivery</p>
-            <p className={`text-2xl font-bold text-foreground mt-1 ${stats.avgDelivery > 50 ? "text-red-500" : "text-foreground"}`}>
+            </span>
+          </button>
+          <button
+            type="button"
+            onClick={() => onPrefill?.(`Average delivery time across my portfolio is ${Math.round(stats.avgDelivery)} min. Which restaurants are dragging this up and what's the recommended fix?`)}
+            className="p-3 text-left cursor-pointer hover:bg-gray-100 transition-colors"
+          >
+            <span className="block text-xs font-medium text-gray-400 uppercase tracking-wide">Avg. delivery</span>
+            <span className={`block text-2xl font-bold mt-1 ${stats.avgDelivery > 50 ? "text-red-500" : "text-foreground"}`}>
               {Math.round(stats.avgDelivery)} min
-            </p>
-          </div>
+            </span>
+          </button>
         </div>
         {/* Row 2: 3 columns */}
         <div className="grid grid-cols-3 divide-x divide-gray-200 border-t border-gray-200">
-          <div className="p-3">
-            <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">Avg. cancel</p>
-            <p className={`text-2xl font-bold mt-1 ${stats.avgCancel > 15 ? "text-red-500" : "text-foreground"}`}>
+          <button
+            type="button"
+            onClick={() => onPrefill?.(`My portfolio's average cancellation rate is ${stats.avgCancel.toFixed(1)}%. Where is the bleeding coming from and how should I address it?`)}
+            className="p-3 text-left cursor-pointer hover:bg-gray-100 transition-colors"
+          >
+            <span className="block text-xs font-medium text-gray-400 uppercase tracking-wide">Avg. cancel</span>
+            <span className={`block text-2xl font-bold mt-1 ${stats.avgCancel > 15 ? "text-red-500" : "text-foreground"}`}>
               {stats.avgCancel.toFixed(1)}%
-            </p>
-          </div>
-          <div className="p-3">
-            <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">Avg. ticket</p>
-            <p className="text-2xl font-bold text-foreground mt-1">{formatCurrency(stats.avgTicket)}</p>
-          </div>
+            </span>
+          </button>
+          <button
+            type="button"
+            onClick={() => onPrefill?.(`Average ticket value is ${formatCurrency(stats.avgTicket)}. Which restaurants are above and below the line, and where's the upside?`)}
+            className="p-3 text-left cursor-pointer hover:bg-gray-100 transition-colors"
+          >
+            <span className="block text-xs font-medium text-gray-400 uppercase tracking-wide">Avg. ticket</span>
+            <span className="block text-2xl font-bold text-foreground mt-1">{formatCurrency(stats.avgTicket)}</span>
+          </button>
           {totalRevenue != null && (
-            <div className="p-3 min-w-0">
-              <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">Revenue</p>
-              <p className="text-lg font-bold text-foreground mt-1 truncate">{formatCurrency(totalRevenue)}</p>
-            </div>
+            <button
+              type="button"
+              onClick={() => onPrefill?.(`My portfolio is generating ${formatCurrency(totalRevenue)} in weekly revenue. How is it distributed and what's the concentration risk?`)}
+              className="p-3 min-w-0 text-left cursor-pointer hover:bg-gray-100 transition-colors"
+            >
+              <span className="block text-xs font-medium text-gray-400 uppercase tracking-wide">Revenue</span>
+              <span className="block text-lg font-bold text-foreground mt-1 truncate">{formatCurrency(totalRevenue)}</span>
+            </button>
           )}
+        </div>
         </div>
       </div>
 
@@ -121,18 +153,23 @@ export function DescriptivePanel({ restaurants, totalRevenue, isLoading }: Descr
         <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-4">By vertical</p>
         <div className="space-y-3">
           {stats.verticalCounts.map(([vertical, count]) => (
-            <div key={vertical}>
-              <div className="flex items-center justify-between text-sm mb-1">
+            <button
+              key={vertical}
+              type="button"
+              onClick={() => onPrefill?.(`Let's talk about my ${count} restaurants in the ${vertical} vertical — how are they performing and where should I focus?`)}
+              className="block w-full text-left rounded-md p-1.5 -mx-1.5 cursor-pointer hover:bg-gray-50 transition-colors"
+            >
+              <span className="flex items-center justify-between text-sm mb-1">
                 <span className="text-foreground font-medium">{vertical}</span>
                 <span className="text-muted-foreground font-semibold">{count}</span>
-              </div>
-              <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-gray-400 rounded-full transition-all"
+              </span>
+              <span className="block h-2.5 bg-gray-100 rounded-full overflow-hidden">
+                <span
+                  className="block h-full bg-gray-400 rounded-full transition-all"
                   style={{ width: `${(count / maxVertical) * 100}%` }}
                 />
-              </div>
-            </div>
+              </span>
+            </button>
           ))}
         </div>
       </div>
@@ -142,10 +179,15 @@ export function DescriptivePanel({ restaurants, totalRevenue, isLoading }: Descr
         <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-4">By city</p>
         <div className="space-y-2.5">
           {stats.cityCounts.map(([city, count]) => (
-            <div key={city} className="flex items-center justify-between text-base">
+            <button
+              key={city}
+              type="button"
+              onClick={() => onPrefill?.(`Let's talk about my ${count} restaurants in ${city} — how does this market look and what should I prioritize?`)}
+              className="flex w-full items-center justify-between text-base rounded-md px-2 py-1 -mx-2 cursor-pointer hover:bg-gray-50 transition-colors"
+            >
               <span className="text-foreground">{city}</span>
               <span className="text-muted-foreground font-semibold">{count}</span>
-            </div>
+            </button>
           ))}
         </div>
       </div>

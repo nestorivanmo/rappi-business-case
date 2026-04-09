@@ -35,13 +35,13 @@ const markdownComponents: Components = {
     </a>
   ),
   h1: ({ children }) => (
-    <h1 className="text-base font-semibold mt-3 mb-1">{children}</h1>
+    <h1 className="text-lg font-semibold mt-3 mb-1">{children}</h1>
   ),
   h2: ({ children }) => (
-    <h2 className="text-sm font-semibold mt-3 mb-1">{children}</h2>
+    <h2 className="text-base font-semibold mt-3 mb-1">{children}</h2>
   ),
   h3: ({ children }) => (
-    <h3 className="text-sm font-semibold mt-3 mb-1">{children}</h3>
+    <h3 className="text-base font-semibold mt-3 mb-1">{children}</h3>
   ),
   blockquote: ({ children }) => (
     <blockquote className="border-l-2 border-gray-300 pl-3 italic text-gray-600 my-2">
@@ -67,13 +67,13 @@ export function MessageList({ messages }: { messages: ChatMessage[] }) {
   }, [messages]);
 
   return (
-    <div className="h-full overflow-y-auto px-6 py-4">
+    <div className="h-full overflow-y-auto px-6 py-4 [scrollbar-width:thin] [scrollbar-color:theme(colors.gray.300)_transparent] [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-gray-400">
       <div className="max-w-2xl mx-auto space-y-4">
         {messages.map((msg, i) => {
           if (msg.role === "user") {
             return (
               <div key={i} className="flex justify-end">
-                <div className="max-w-[85%] rounded-2xl px-4 py-2.5 text-sm whitespace-pre-wrap bg-rappi text-white">
+                <div className="max-w-[85%] rounded-2xl px-4 py-2.5 text-base whitespace-pre-wrap bg-rappi text-white">
                   {msg.content}
                 </div>
               </div>
@@ -83,7 +83,7 @@ export function MessageList({ messages }: { messages: ChatMessage[] }) {
           // Assistant: no bubble, free-flowing markdown
           return (
             <div key={i} className="flex justify-start">
-              <div className="max-w-[85%] text-sm text-gray-900 leading-relaxed">
+              <div className="max-w-[85%] text-base text-gray-900 leading-relaxed">
                 {msg.content ? (
                   <ReactMarkdown
                     remarkPlugins={[remarkGfm]}
