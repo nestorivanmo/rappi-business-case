@@ -88,7 +88,11 @@ def _tools_to_declarations(tools: list[ToolDefinition]) -> list[types.Tool]:
 def _extract_tool_calls(response) -> list[ToolCall]:
     """Extract tool calls from Gemini response."""
     tool_calls = []
-    if response.candidates and response.candidates[0].content:
+    if (
+        response.candidates
+        and response.candidates[0].content
+        and response.candidates[0].content.parts
+    ):
         for part in response.candidates[0].content.parts:
             if part.function_call:
                 tool_calls.append(ToolCall(
@@ -128,7 +132,11 @@ class GeminiProvider:
 
         tool_calls = _extract_tool_calls(response)
         content = None
-        if response.candidates and response.candidates[0].content:
+        if (
+            response.candidates
+            and response.candidates[0].content
+            and response.candidates[0].content.parts
+        ):
             text_parts = [
                 p.text for p in response.candidates[0].content.parts
                 if p.text
@@ -172,7 +180,11 @@ class GeminiProvider:
             config=config,
         )
         async for chunk in stream:
-            if chunk.candidates and chunk.candidates[0].content:
+            if (
+                chunk.candidates
+                and chunk.candidates[0].content
+                and chunk.candidates[0].content.parts
+            ):
                 for part in chunk.candidates[0].content.parts:
                     if part.text:
                         yield StreamChunk(content=part.text)
