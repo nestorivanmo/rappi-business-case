@@ -29,10 +29,11 @@ Proactive Risk Detection Agent for Rappi KAMs (Rappi AI Builder Challenge — Ca
 
 ## Key architecture decisions
 
-- **Deterministic scoring, LLM for strategy only.** Health scores, quadrants, and velocity overrides computed by pandas. Agents consume structured results.
-- **Provider-agnostic LLM layer.** `LLMProvider` protocol with Gemini/OpenAI/Anthropic adapters. Configurable per agent via env vars.
-- **Three specialized agents behind a router:** Diagnostic, RGM Strategy, Budget. Router classifies intent and delegates.
+- **Deterministic scoring, LLM for strategy only.** Health scores, quadrants, and velocity overrides computed by pandas in `backend/app/engine/`. Agents consume structured results via tool calls, never recompute metrics.
+- **Provider-agnostic LLM layer.** `LLMProvider` protocol (`backend/app/llm/protocol.py`) with Gemini/OpenAI/Anthropic adapters. `get_agent_provider()` in `llm/factory.py` resolves per-agent overrides, falling back to `llm_provider`/`llm_model` defaults.
+- **Router → 3 specialized sub-agents.** `RouterAgent` (`backend/app/agents/router.py`) owns its own LLM + tool handlers that delegate to `DiagnosticAgent`, `RGMStrategyAgent`, `BudgetAgentImpl`. Each agent's system prompt lives in `backend/app/agents/prompts/`.
 - **Two-axis classification (Health x Value)** via Pareto threshold on revenue. Health threshold = 60, budget = $10,000 MXN/week per KAM.
+- **FastAPI lifespan bootstrap.** `DiagnosticEngine` and `BudgetManager` are constructed once in `main.py` lifespan and attached to `app.state`; route handlers read them via `request.app.state`.
 
 ## Scoring model
 
@@ -57,8 +58,12 @@ cd frontend && npm install && npm run dev  # Frontend on :3000
 
 ```bash
 cd backend && source ../.venv/bin/activate
-pytest tests/ -v
+pytest tests/ -v                                   # full suite
+pytest tests/test_scoring.py -v                    # one file
+pytest tests/test_scoring.py::test_name -v         # one test
 ```
+
+Frontend lint: `cd frontend && npm run lint` (ESLint 9 flat config via `eslint.config.mjs`).
 
 ## Running evals (requires LLM API key)
 
@@ -70,5 +75,11 @@ python evals/run_evals.py --all
 ## Environment
 
 - Python 3.14 venv in `.venv/` (Docker uses 3.12)
-- API keys via `.env` file (see `.env.example`)
+- API keys via `.env` file (see `.env.example`); `Settings` reads both `.env` and `../.env`
 - Backend dependencies in `backend/requirements.txt`
+- **Per-agent LLM overrides** via `{diagnostic,rgm,budget}_agent_{provider,model}` env vars; otherwise all agents share `llm_provider` / `llm_model`
+- **Data loading quirk:** the canonical dataset lives at `1-data-exploration/dataset.csv`. Docker mounts it read-only into `backend/data/dataset.csv` (see `docker-compose.yml`). When running the backend outside Docker, ensure `backend/data/dataset.csv` exists or set `data_path` accordingly.
+
+## Frontend caveat
+
+`frontend/AGENTS.md` warns: **this is not the Next.js in your training data.** The frontend runs Next.js 16.2.2 + React 19.2 with breaking API/convention changes. Before writing frontend code, consult `frontend/node_modules/next/dist/docs/` for the current guide rather than relying on memory, and heed deprecation notices.
